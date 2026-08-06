@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de infografía · IA Toolbox</title>
+  <style>
+    :root{--azul:#0067b8;--violeta:#5b2e91;--tinta:#12172b;--gris:#5b6478;--fondo:#f5f7fb;--tarjeta:#fff;--borde:#e6e9f2}
+    @media (prefers-color-scheme: dark){:root{--tinta:#eef1f8;--gris:#a9b2c7;--fondo:#0d1017;--tarjeta:#161b26;--borde:#252c3a}}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fondo);color:var(--tinta);padding:32px}
+    .wrap{max-width:720px;margin:0 auto;text-align:center}
+    h1{font-size:1.8rem;margin-bottom:6px}
+    .sub{color:var(--gris);margin-bottom:32px}
+    .steps{display:flex;flex-direction:column;gap:16px}
+    .step{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:22px;
+      display:flex;align-items:center;gap:18px;text-align:left}
+    .num{flex:0 0 46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      font-weight:800;color:#fff;background:linear-gradient(135deg,var(--azul),var(--violeta));font-size:1.2rem}
+    .step h3{font-size:1.1rem;margin-bottom:2px}
+    .step p{color:var(--gris);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🧩 Cómo crear un agente en 3 pasos</h1>
+    <p class="sub">Plantilla de infografía reutilizable · cambia los pasos por los tuyos</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h3>Define el propósito</h3><p>¿Qué problema resuelve y para quién?</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Escribe las instrucciones</h3><p>Rol, tarea, reglas y tono. Claras y concretas.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Prueba y comparte</h3><p>Ajusta con un caso real y publícalo en la comunidad.</p></div></div>
+    </div>
+  </div>
+</body>
+</html>

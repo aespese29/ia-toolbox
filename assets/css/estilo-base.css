@@ -1,0 +1,10 @@
+/* Estilo base reutilizable · IA Toolbox by Adrián Espés */
+:root{
+  --azul:#0067b8; --violeta:#5b2e91; --tinta:#12172b;
+  --gris:#5b6478; --fondo:#f5f7fb; --tarjeta:#ffffff; --borde:#e6e9f2;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --tinta:#eef1f8; --gris:#a9b2c7; --fondo:#0d1017; --tarjeta:#161b26; --borde:#252c3a; }
+}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.6}
+.card{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:24px}

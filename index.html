@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Toolbox · by Adrián Espés</title>
+  <meta name="description" content="Caja de herramientas de IA: agentes, HTMLs visuales, prompts y guías reutilizables sobre Microsoft Copilot.">
+  <style>
+    :root{
+      --azul:#0067b8; --violeta:#5b2e91; --tinta:#12172b;
+      --gris:#5b6478; --fondo:#f5f7fb; --tarjeta:#ffffff; --borde:#e6e9f2;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --tinta:#eef1f8; --gris:#a9b2c7; --fondo:#0d1017; --tarjeta:#161b26; --borde:#252c3a; }
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.6}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+    header.hero{background:linear-gradient(135deg,var(--azul),var(--violeta));color:#fff;padding:72px 0 64px;text-align:center}
+    .hero .kicker{font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-bottom:10px}
+    .hero h1{font-size:2.6rem;font-weight:800;margin-bottom:12px}
+    .hero p{font-size:1.15rem;opacity:.95;max-width:640px;margin:0 auto 28px}
+    .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+      color:#fff;padding:6px 14px;border-radius:999px;font-size:.85rem;margin:4px;font-weight:600}
+    section{padding:56px 0}
+    h2{font-size:1.6rem;margin-bottom:8px;font-weight:700}
+    .sub{color:var(--gris);margin-bottom:32px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:var(--tarjeta);border:1px solid var(--borde);border-radius:16px;padding:26px;
+      text-decoration:none;color:inherit;transition:.2s;display:block}
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.10);border-color:var(--azul)}
+    .card .ico{font-size:2rem;margin-bottom:12px}
+    .card h3{font-size:1.2rem;margin-bottom:6px}
+    .card p{color:var(--gris);font-size:.95rem}
+    footer{border-top:1px solid var(--borde);padding:32px 0;text-align:center;color:var(--gris);font-size:.9rem}
+    footer a{color:var(--azul);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="kicker">by Adrián Espés · Microsoft MVP</div>
+      <h1>🧰 IA Toolbox</h1>
+      <p>Una caja de herramientas abierta sobre <b>IA aplicada</b>, <b>Microsoft Copilot</b>, <b>agentes</b> y productividad. Copia, adapta y usa. Con o sin perfil técnico.</p>
+      <span class="tag">🤖 Agentes</span>
+      <span class="tag">🎨 HTML visual</span>
+      <span class="tag">💬 Prompts</span>
+      <span class="tag">📚 Guías</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>🧭 Explora la caja de herramientas</h2>
+      <p class="sub">Elige una sección. Copia, adapta y usa en tu día a día.</p>
+      <div class="grid">
+        <a class="card" href="agentes/">
+          <div class="ico">🤖</div>
+          <h3>Agentes</h3>
+          <p>Instrucciones de agentes de Copilot Studio, listas para copiar y pegar.</p>
+        </a>
+        <a class="card" href="htmls/">
+          <div class="ico">🎨</div>
+          <h3>HTMLs visuales</h3>
+          <p>Informes, infografías y plantillas listas para abrir en el navegador.</p>
+        </a>
+        <a class="card" href="prompts/">
+          <div class="ico">💬</div>
+          <h3>Pronteca · Prompts</h3>
+          <p>Librería de prompts reutilizables, organizada por tarea.</p>
+        </a>
+        <a class="card" href="tutoriales/">
+          <div class="ico">📚</div>
+          <h3>Tutoriales</h3>
+          <p>Guías paso a paso de Copilot, agentes y GitHub Pages.</p>
+        </a>
+        <a class="card" href="recursos/">
+          <div class="ico">📦</div>
+          <h3>Recursos</h3>
+          <p>Cheat sheets, checklists y material descargable.</p>
+        </a>
+        <a class="card" href="https://adrianespes.com">
+          <div class="ico">🌐</div>
+          <h3>Web & YouTube</h3>
+          <p>Artículos, análisis y vídeos sobre IA aplicada y Copilot.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Hecho con ❤️ por <b>Adrián Espés</b> · Microsoft MVP · M365 Copilot ·
+      <a href="https://adrianespes.com">adrianespes.com</a> ·
+      Contenido bajo CC BY 4.0
+    </div>
+  </footer>
+</body>
+</html>

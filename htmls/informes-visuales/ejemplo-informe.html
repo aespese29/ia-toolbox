@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de informe visual · IA Toolbox</title>
+  <style>
+    :root{--azul:#0067b8;--violeta:#5b2e91;--tinta:#12172b;--gris:#5b6478;--fondo:#f5f7fb;--tarjeta:#fff;--borde:#e6e9f2}
+    @media (prefers-color-scheme: dark){:root{--tinta:#eef1f8;--gris:#a9b2c7;--fondo:#0d1017;--tarjeta:#161b26;--borde:#252c3a}}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fondo);color:var(--tinta);padding:32px}
+    .wrap{max-width:900px;margin:0 auto}
+    h1{font-size:1.8rem;margin-bottom:4px}
+    .sub{color:var(--gris);margin-bottom:28px}
+    .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:28px}
+    .m{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:20px}
+    .m .n{font-size:2rem;font-weight:800;color:var(--azul)}
+    .m .l{color:var(--gris);font-size:.9rem}
+    .card{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:24px;margin-bottom:16px}
+    .card h2{font-size:1.2rem;margin-bottom:8px}
+    .bar{height:10px;background:var(--borde);border-radius:99px;overflow:hidden;margin:8px 0}
+    .bar>span{display:block;height:100%;background:linear-gradient(90deg,var(--azul),var(--violeta))}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📊 Ejemplo de informe visual</h1>
+    <p class="sub">Plantilla base reutilizable · sustituye estos datos por los tuyos</p>
+
+    <div class="metrics">
+      <div class="m"><div class="n">128</div><div class="l">Métrica A</div></div>
+      <div class="m"><div class="n">92%</div><div class="l">Métrica B</div></div>
+      <div class="m"><div class="n">4.7</div><div class="l">Métrica C</div></div>
+    </div>
+
+    <div class="card">
+      <h2>Progreso por área</h2>
+      <p>Área 1<div class="bar"><span style="width:80%"></span></div></p>
+      <p>Área 2<div class="bar"><span style="width:55%"></span></div></p>
+      <p>Área 3<div class="bar"><span style="width:35%"></span></div></p>
+    </div>
+
+    <div class="card">
+      <h2>💡 Idea clave</h2>
+      <p>Aquí destacas la conclusión más importante del informe.</p>
+    </div>
+  </div>
+</body>
+</html>
