@@ -1,5 +1,6 @@
 # ¿Qué puede hacer Microsoft Copilot por ti?
-adrian-espes.jpg
+
+https://raw.githubusercontent.com/aespese29/ia-toolbox/main/sessions/que-puede-hacer-copilot-por-ti/adrian-espes.jpg
 
 Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot, orientada a descubrir casos de uso reales para mejorar la productividad personal y profesional.
 
