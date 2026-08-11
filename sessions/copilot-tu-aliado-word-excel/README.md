@@ -1,6 +1,6 @@
 # Copilot ya no responde… ahora trabaja contigo
 
-![Copilot ya no responde… ahora trabaja contigo](cover.jpg)
+![Copilot ya no responde… ahora trabaja contigo](cover.jpeg)
 
 Sesión presentada en las Tenerife Summer Sessions (GuarandingaTECH) sobre cómo Microsoft Copilot deja de sugerir para convertirse en un aliado que actúa dentro de Word y Excel.
 
