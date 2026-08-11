@@ -10,7 +10,7 @@ Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot, orientada
 - Casos de uso en Outlook, Teams, Word, Excel y PowerPoint
 - Researcher y Analyst
 - Agentes con Copilot Studio
-- Recomendaciones para empezar
+- Cómo empezar a obtener valor desde el primer día
 
 ## Material disponible
 
@@ -21,8 +21,14 @@ Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot, orientada
 **Adrián Espés**  
 Microsoft MVP · M365 Copilot
 
-- LinkedIn: https://linkedin.com/in/adrianespes
+## Contacto
 
-## Licencia
+Si tienes cualquier duda o comentario sobre esta sesión, puedes contactar conmigo:
 
-Este material se comparte con fines formativos y de aprendizaje para la comunidad.
+📧 aespes@adrianespes.com
+
+🔗 LinkedIn: https://linkedin.com/in/adrianespes
+
+---
+
+© Adrián Espés. Material compartido con fines educativos y divulgativos.
