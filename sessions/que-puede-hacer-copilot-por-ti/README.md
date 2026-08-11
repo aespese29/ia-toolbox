@@ -33,4 +33,4 @@ Si tienes cualquier duda o comentario sobre esta sesión, puedes contactar conmi
 
 ---
 
-© Adrián Espés. Material compartido con fines educativos y divulgativos.
+© 2026 Adrián Espés. Material compartido con fines educativos y divulgativos.
