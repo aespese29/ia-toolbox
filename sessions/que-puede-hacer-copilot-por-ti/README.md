@@ -1,22 +1,28 @@
 # ¿Qué puede hacer Microsoft Copilot por ti?
 
-Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot.
+Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot, orientada a descubrir casos de uso reales para mejorar la productividad personal y profesional.
 
 ## Contenido
 
-- Qué es Microsoft Copilot
+- ¿Qué es Microsoft Copilot?
 - Copilot Chat vs Microsoft 365 Copilot
-- Seguridad y privacidad
-- Casos de uso en Excel, Word y PowerPoint
+- Seguridad, privacidad y cumplimiento
+- Casos de uso en Outlook, Teams, Word, Excel y PowerPoint
 - Researcher y Analyst
 - Agentes con Copilot Studio
-
-## Ponente
-
-Adrián Espés
-Microsoft MVP · M365 Copilot
+- Recomendaciones para empezar
 
 ## Material disponible
 
-- Presentación en PDF
-`
+- Presentación de la sesión (PDF)
+
+## Ponente
+
+**Adrián Espés**  
+Microsoft MVP · M365 Copilot
+
+- LinkedIn: https://linkedin.com/in/adrianespes
+
+## Licencia
+
+Este material se comparte con fines formativos y de aprendizaje para la comunidad.
