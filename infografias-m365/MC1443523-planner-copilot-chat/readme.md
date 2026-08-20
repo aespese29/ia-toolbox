@@ -22,26 +22,6 @@ requiere ninguna acción**.
 - 📄 `AE_Infografia_CopilotPlanner_v01.pdf` — imprimible / compartible.
 - 🌐 `AE_Infografia_CopilotPlanner_interactivo_v01.html` — versión web interactiva (responsive).
 
-## 📝 Copy sugerido (LinkedIn)
-
-> 🤖 Planner llega al chat de Copilot: gestionar tareas sin salir de la conversación.
->
-> Microsoft 365 Copilot Chat va a permitir crear, consultar y actualizar tareas y planes de
-> Planner usando lenguaje natural, sin cambiar de aplicación.
->
-> Lo que me parece más interesante:
-> ✅ Creas planes y tareas con un simple prompt.
-> ✅ Consultas los detalles directamente en el chat (de momento solo texto; después llegará la tarjeta interactiva).
-> ✅ Y todo respetando los permisos que ya tienes en Planner.
->
-> 📅 Disponibilidad general: a partir de principios de septiembre de 2026, en escritorio y web. No requiere ninguna acción.
->
-> 💡 Menos saltos entre apps. Más gestión en lenguaje natural.
->
-> #MVPBuzz #Copilot #Microsoft365 #Planner
-
----
-
 > Basado únicamente en información pública del anuncio oficial (Centro de mensajes M365).
 
 **Adrián Espés** · Microsoft MVP · M365 Copilot
