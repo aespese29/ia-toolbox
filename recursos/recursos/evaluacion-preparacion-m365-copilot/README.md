@@ -227,6 +227,5 @@ Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes
 [adrianespes.com](https://adrianespes.com)
 
 **Versión del recurso:** 1.0  
-**Publicado:** 20 de agosto de 2026  
-**Estado del HTML:** implementado y verificado técnicamente
+Última actualización: 20 de agosto de 2026
 
