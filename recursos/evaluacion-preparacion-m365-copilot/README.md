@@ -1,62 +1,69 @@
 # Evaluación de preparación para Microsoft 365 Copilot
 
-Descubre si tu organización necesita seguir preparándose, está lista para iniciar un piloto controlado o dispone de las condiciones necesarias para ampliar el despliegue de Microsoft 365 Copilot.
+![Evaluación de preparación para Microsoft 365 Copilot](banner-evaluacion-preparacion-m365-copilot.png)
 
-> **Evaluación orientativa basada en requisitos, guías y recomendaciones oficiales de Microsoft.**  
-> No constituye una certificación oficial, una auditoría técnica ni una validación automática de la configuración del tenant.
+Herramienta interactiva para evaluar el estado de preparación de una organización antes de desplegar **Microsoft 365 Copilot**.
+
+La evaluación ayuda a:
+
+- comprobar requisitos esenciales;
+- identificar bloqueos críticos;
+- conocer el nivel de preparación por dimensión;
+- priorizar las acciones pendientes;
+- y generar un informe simple con los resultados.
+
+> **Importante:** el resultado es orientativo y está basado en requisitos, guías y recomendaciones oficiales de Microsoft. No constituye una certificación oficial, una auditoría técnica ni una validación automática de la configuración del tenant.
 
 ## Abrir la evaluación interactiva
 
-**[Iniciar ahora la evaluación de preparación para Microsoft 365 Copilot](https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/)**
+**[Iniciar la evaluación de preparación para Microsoft 365 Copilot](https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/index.html)**
 
-La evaluación se abre como una aplicación web mediante GitHub Pages. No necesitas instalar aplicaciones, descargar archivos ni iniciar sesión.
+La evaluación se abre directamente en el navegador mediante GitHub Pages. No necesitas instalar aplicaciones, descargar archivos ni iniciar sesión.
 
-Si el enlace anterior todavía no muestra la evaluación, comprueba que este recurso se haya publicado exactamente con esta estructura y nombres, respetando mayúsculas y minúsculas:
+También puedes [consultar el archivo fuente `index.html`](./index.html) dentro del repositorio.
 
-```text
-recursos/
-└── evaluacion-preparacion-m365-copilot/
-    ├── README.md
-    └── index.html
-```
+## Qué incluye
 
-También puedes [consultar el archivo fuente `index.html`](./index.html) desde esta carpeta. Este segundo enlace muestra el archivo dentro de GitHub; para utilizar la evaluación renderizada, usa siempre el botón **Iniciar ahora la evaluación**.
+- 25 comprobaciones distribuidas en cinco dimensiones.
+- Respuestas cerradas: **Verificado**, **En curso**, **No iniciado** y **No aplica**.
+- Requisitos críticos que funcionan como bloqueos.
+- Puntuación general y puntuación por dimensión.
+- Estado orientativo de preparación.
+- Bloqueos detectados y prioridades recomendadas.
+- Módulo complementario para evaluar la preparación para agentes.
+- Informe de resultados que puede guardarse localmente como PDF.
 
-## Qué permite evaluar
+## Dimensiones evaluadas
 
-El recurso analiza el estado de preparación en cinco dimensiones:
+### 1. Estrategia y liderazgo
 
-1. **Estrategia y liderazgo**  
-   Objetivos, patrocinio ejecutivo, equipo responsable, alcance y criterios de éxito.
+Objetivos, patrocinio ejecutivo, equipo responsable, alcance del piloto y criterios de éxito.
 
-2. **Preparación técnica**  
-   Licenciamiento, identidad, Exchange Online, aplicaciones compatibles, canales de actualización y conectividad.
+### 2. Preparación técnica
 
-3. **Seguridad, datos y cumplimiento**  
-   Permisos, acceso a la información, protección de datos, auditoría y controles de cumplimiento.
+Licenciamiento, identidad, Exchange Online, compatibilidad de aplicaciones, canales de actualización y conectividad.
 
-4. **Adopción y casos de uso**  
-   Grupo piloto, escenarios prioritarios, champions, formación, comunicación, comunidad y soporte.
+### 3. Seguridad, datos y cumplimiento
 
-5. **Medición y mejora continua**  
-   Métricas, feedback, revisión de licencias, casos de éxito y criterios para ampliar el despliegue.
+Permisos, acceso a la información, protección de datos, auditoría y controles de cumplimiento.
 
-La preparación para crear y desplegar agentes se presenta como un **módulo complementario**. No reduce la puntuación de una organización que quiera comenzar con Microsoft 365 Copilot sin crear agentes todavía.
+### 4. Adopción y casos de uso
 
-## Cómo funciona
+Grupo piloto, escenarios prioritarios, champions, formación, comunicación, comunidad y soporte.
 
-Cada comprobación ofrece cuatro respuestas cerradas:
+### 5. Medición y mejora continua
 
-- **Verificado:** la comprobación está completada y existe evidencia suficiente.
-- **En curso:** se está trabajando en ella, pero todavía no está completada.
-- **No iniciado:** no se ha comenzado o no existe una decisión al respecto.
-- **No aplica:** la comprobación no corresponde al alcance de la evaluación y se excluye del cálculo.
+Métricas, feedback, revisión de uso, casos de éxito y criterios para ampliar el despliegue.
 
-La evaluación utiliza únicamente estas selecciones para calcular el resultado. No solicita datos de configuración, documentos ni información identificativa.
+### Módulo complementario de agentes
 
-## Modelo de puntuación
+Evalúa aspectos básicos de definición, conocimiento, permisos, costes, publicación y mantenimiento de agentes.
 
-La puntuación se calcula de forma orientativa:
+Este módulo es opcional y **no modifica el resultado principal** de preparación para Microsoft 365 Copilot.
+
+## Cómo funciona la puntuación
+
+Cada comprobación utiliza una respuesta cerrada:
 
 - **Verificado:** 2 puntos.
 - **En curso:** 1 punto.
@@ -67,113 +74,78 @@ La puntuación se calcula de forma orientativa:
 Puntuación = puntos obtenidos / puntos posibles aplicables × 100
 ```
 
-Los requisitos imprescindibles funcionan como **controles de bloqueo**. Una puntuación general alta no compensa un requisito crítico sin resolver.
-
-Por ejemplo, si la organización obtiene una puntuación elevada, pero no ha verificado un requisito esencial de licenciamiento, identidad o preparación técnica, el resultado indicará que todavía existe un bloqueo para iniciar el piloto.
+Los requisitos imprescindibles funcionan como controles de bloqueo. Una puntuación elevada no compensa un requisito crítico sin resolver.
 
 ## Estados de preparación
 
 ### Requiere preparación
 
-Existe al menos un requisito imprescindible sin resolver. El resultado identifica los bloqueos y las acciones prioritarias.
+Existe al menos un requisito crítico sin resolver.
 
 ### Preparación en curso
 
-Los requisitos básicos están parcialmente cubiertos, pero todavía faltan elementos relevantes para iniciar un piloto controlado.
+Los requisitos críticos se han cubierto total o parcialmente, pero todavía faltan elementos relevantes para iniciar un piloto controlado.
 
 ### Preparada para piloto
 
-Los requisitos esenciales están verificados y la organización dispone de un equipo responsable, un grupo piloto, casos de uso iniciales, formación, soporte y métricas para evaluar el piloto.
+La organización dispone de las condiciones orientativas para comenzar un piloto controlado y medir sus resultados.
 
 ### Preparada para ampliar
 
-El piloto ha generado resultados y feedback, y la organización dispone de seguimiento de uso, formación continua, gobierno periódico y criterios para ampliar licencias y escenarios.
+La organización presenta un nivel alto de preparación y puede valorar una ampliación controlada utilizando sus criterios de gobierno y medición.
 
-> Los niveles y umbrales utilizados son criterios orientativos de IA Toolbox. Microsoft no publica una puntuación universal que certifique el nivel de preparación de una organización.
-
-## Resultado de la evaluación
-
-Al finalizar se muestra:
-
-- Estado general de preparación.
-- Puntuación orientativa.
-- Resultado por dimensión.
-- Número de bloqueos críticos.
-- Comprobaciones pendientes.
-- Acciones prioritarias recomendadas.
-- Decisión orientativa sobre el siguiente paso.
+> Microsoft no publica una puntuación universal que certifique el nivel de preparación de una organización. Los niveles y umbrales de esta herramienta son criterios orientativos de IA Toolbox.
 
 ## Informe de resultados
 
-La evaluación permite generar una vista resumida con:
+Al finalizar la evaluación se muestra:
 
 - el estado general;
 - la puntuación orientativa;
 - el resultado por dimensión;
-- los bloqueos detectados;
-- y las acciones prioritarias pendientes.
+- el número de bloqueos críticos;
+- las comprobaciones pendientes;
+- las prioridades recomendadas;
+- y, si se completa el módulo opcional, el resultado de preparación para agentes.
 
 La opción **Guardar informe en PDF** abre la función de impresión del navegador. Desde ella puedes seleccionar **Guardar como PDF**.
 
-El informe se genera localmente y se guarda únicamente en el dispositivo desde el que realizas la evaluación.
+## Privacidad por diseño
 
-## Privacidad y tratamiento de la información
-
-Esta evaluación está diseñada para funcionar completamente en el navegador.
+La evaluación funciona completamente en el navegador.
 
 - Las respuestas se procesan localmente mediante JavaScript.
 - No se envían respuestas a ningún servidor.
 - No se utilizan formularios externos, APIs ni bases de datos.
-- No se utilizan cookies, `localStorage` ni `sessionStorage` para conservar las respuestas.
-- No se integra ningún servicio de analítica en el recurso.
-- No se solicitan nombres, correos electrónicos, dominios, archivos ni información identificativa.
+- No se utilizan cookies, `localStorage` ni `sessionStorage`.
+- No se integran servicios de analítica.
+- No se solicitan nombres, correos, dominios, archivos ni información identificativa.
 - Las respuestas desaparecen al actualizar o cerrar la página.
-- El recurso solo utiliza las selecciones necesarias para calcular el resultado orientativo.
+- El informe se genera y se guarda únicamente en el dispositivo de la persona usuaria.
 
-### Información que no debes introducir ni compartir
+### No introduzcas información confidencial
 
-No introduzcas ni compartas:
+La evaluación solo necesita conocer el estado de cada comprobación. No introduzcas ni compartas:
 
-- Información confidencial de la organización.
-- Datos personales o identificativos.
-- Nombres de clientes, personas, proyectos o departamentos.
-- Configuraciones internas de seguridad.
-- Políticas, credenciales, claves o información de acceso.
-- Documentos, capturas o contenidos corporativos.
-- Detalles técnicos que puedan revelar la configuración del tenant.
-
-La evaluación no necesita esa información. Solo debes seleccionar el estado que mejor represente cada comprobación.
-
-## Privacidad del informe
-
-El informe también se genera completamente en el navegador.
-
-- IA Toolbox no recibe ni almacena el informe.
-- El informe no se envía a ningún servicio externo.
-- El PDF se guarda únicamente en el dispositivo de la persona usuaria.
-- El informe no contiene datos identificativos porque la evaluación no los solicita.
+- información confidencial de la organización;
+- datos personales o identificativos;
+- nombres de clientes, personas, proyectos o departamentos;
+- configuraciones internas de seguridad;
+- credenciales, claves o información de acceso;
+- documentos, capturas o contenido corporativo;
+- detalles técnicos que puedan revelar la configuración del tenant.
 
 ## Alcance y limitaciones
 
 El resultado no constituye:
 
-- Una certificación oficial de Microsoft.
-- Una auditoría técnica o de seguridad.
-- Una evaluación de cumplimiento normativo.
-- Una validación automática de la configuración del tenant.
-- Una garantía de preparación para desplegar Microsoft 365 Copilot.
+- una certificación oficial de Microsoft;
+- una auditoría técnica o de seguridad;
+- una evaluación de cumplimiento normativo;
+- una validación automática de la configuración del tenant;
+- ni una garantía de preparación para desplegar Microsoft 365 Copilot.
 
-Para validar la configuración real de un entorno deben utilizarse las herramientas e informes oficiales de Microsoft y realizarse las revisiones técnicas, de seguridad, cumplimiento y adopción correspondientes.
-
-## Complementa la evaluación con herramientas oficiales
-
-La autoevaluación ayuda a ordenar decisiones y detectar áreas pendientes, pero no consulta la configuración del tenant.
-
-Para completar la revisión técnica, Microsoft dispone de recursos como:
-
-- El **Microsoft Copilot Readiness Report** del Centro de administración de Microsoft 365, que muestra elegibilidad técnica, licencias, canales de actualización y señales de uso de aplicaciones.
-- El **Microsoft Copilot Optimization Assessment**, recomendado por Microsoft antes del despliegue para evaluar la madurez del gobierno de datos y los controles de seguridad.
-- El **Automated Readiness Assessment for Microsoft 365 Copilot and Agents**, que analiza configuraciones reales mediante APIs y genera observaciones y recomendaciones priorizadas.
+Para comprobar la configuración real de un entorno deben utilizarse las herramientas e informes oficiales de Microsoft y realizarse las revisiones técnicas, de seguridad, cumplimiento y adopción correspondientes.
 
 ## Referencias oficiales
 
@@ -183,37 +155,50 @@ Para completar la revisión técnica, Microsoft dispone de recursos como:
 - [Microsoft 365 Copilot Adoption Playbook](https://www.microsoft.com/en-us/microsoft-365-copilot/copilot-adoption-guide)
 - [Automated Readiness Assessment for Microsoft 365 Copilot and Agents](https://github.com/microsoft/m365-copilot-automated-readiness-assessment)
 
-## Verificación técnica de cada versión
+## Verificación técnica de la versión 1.0
 
-Antes de publicar una versión del HTML se revisará que:
+La versión 1.0 se ha revisado para confirmar que:
 
-- no transmita respuestas;
-- no conserve respuestas en el navegador;
-- no utilice cookies;
-- no utilice almacenamiento local o de sesión;
-- no contenga formularios de envío;
-- no permita subir archivos;
-- no integre servicios de analítica;
-- no solicite información confidencial;
-- y no necesite datos identificativos para calcular el resultado.
-
-### Verificación de la versión 1.0
-
-La versión 1.0 se ha revisado para confirmar que no transmite ni conserva respuestas, no utiliza cookies o almacenamiento del navegador, no contiene formularios de envío, no permite subir archivos y no integra servicios de analítica.
+- no transmite ni conserva respuestas;
+- no utiliza cookies ni almacenamiento local o de sesión;
+- no contiene formularios de envío;
+- no permite subir archivos;
+- no integra servicios de analítica;
+- no solicita información confidencial;
+- y no necesita datos identificativos para calcular el resultado.
 
 **Fecha de verificación técnica:** 20 de agosto de 2026.
 
-## Archivos del recurso
+## Estructura del recurso
+
+Crea la estructura desde la **raíz del repositorio**, evitando repetir el nombre de una carpeta:
 
 ```text
-recursos/
-└── evaluacion-preparacion-m365-copilot/
-    ├── README.md
-    └── index.html
+ia-toolbox/
+└── recursos/
+    └── evaluacion-preparacion-m365-copilot/
+        ├── README.md
+        ├── index.html
+        └── banner-evaluacion-preparacion-m365-copilot.png
 ```
 
-- `README.md`: explicación, metodología, privacidad, alcance y referencias.
-- `index.html`: evaluación interactiva lista para utilizar desde GitHub Pages.
+Los tres archivos deben estar en la misma carpeta.
+
+## Publicación mediante GitHub Pages
+
+Configura GitHub Pages con:
+
+```text
+Source: Deploy from a branch
+Branch: main
+Folder: /(root)
+```
+
+Con esa estructura, la evaluación estará disponible en:
+
+```text
+https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/index.html
+```
 
 ## Uso y contribuciones
 
@@ -226,5 +211,5 @@ Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes
 **Adrián Espés** · Microsoft MVP · M365 Copilot  
 [adrianespes.com](https://adrianespes.com)
 
-**Versión del recurso:** 1.0  
-**Publicado:** 20 de agosto de 2026  
+**Versión:** 1.0  
+**Publicado:** 20 de agosto de 2026
