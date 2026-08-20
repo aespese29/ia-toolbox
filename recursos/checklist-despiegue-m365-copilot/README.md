@@ -1,155 +1,218 @@
-# ✅ Checklist de despliegue de Microsoft 365 Copilot
+# Evaluación de preparación para Microsoft 365 Copilot
 
-Una guía práctica para comprobar si una organización está preparada para desplegar **Microsoft 365 Copilot** de forma gradual, gobernada y orientada a resultados.
+Descubre si tu organización necesita seguir preparándose, está lista para iniciar un piloto controlado o dispone de las condiciones necesarias para ampliar el despliegue de Microsoft 365 Copilot.
 
-Esta checklist no sustituye la documentación técnica de Microsoft. Su objetivo es ayudarte a ordenar las decisiones y comprobaciones principales antes, durante y después del despliegue.
+> **Evaluación orientativa basada en requisitos, guías y recomendaciones oficiales de Microsoft.**  
+> No constituye una certificación oficial, una auditoría técnica ni una validación automática de la configuración del tenant.
 
-## 🎯 ¿Para quién está pensada?
+## Abrir la evaluación interactiva
 
-- Responsables de la implantación de Microsoft 365 Copilot.
-- Equipos de adopción, formación y gestión del cambio.
-- Administradores de Microsoft 365, Copilot y Power Platform.
-- Consultores, champions y responsables de casos de uso.
-- Equipos que también quieran incorporar agentes dentro de su estrategia de Copilot.
+[Iniciar la evaluación de preparación para Microsoft 365 Copilot](https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/)
 
-## 🧭 Cómo utilizarla
+La evaluación se ejecuta directamente en el navegador. No necesitas instalar aplicaciones, descargar archivos ni iniciar sesión.
 
-1. Recorre las fases en orden.
-2. Marca únicamente las comprobaciones que estén realmente completadas.
-3. Añade un responsable y una fecha objetivo a los puntos pendientes.
-4. Empieza con un grupo piloto antes de ampliar el despliegue.
-5. Revisa la checklist periódicamente: el despliegue no termina con la asignación de licencias.
+> El enlace estará disponible cuando el archivo `index.html` se publique en esta carpeta y GitHub Pages complete el despliegue del repositorio.
 
----
+## Qué permite evaluar
 
-## 1. Objetivos y equipo responsable
+El recurso analiza el estado de preparación en cinco dimensiones:
 
-- [ ] Existe un objetivo claro para el despliegue de Microsoft 365 Copilot.
-- [ ] Se ha identificado un patrocinador ejecutivo.
-- [ ] Se ha creado un equipo de trabajo con perfiles de negocio, IT, adopción, seguridad y riesgo.
-- [ ] Se han definido los departamentos o equipos prioritarios.
-- [ ] Se han identificado necesidades reales de trabajo que Copilot podría ayudar a resolver.
-- [ ] Se han definido indicadores para evaluar el éxito del despliegue.
-- [ ] Se han acordado los criterios para ampliar, mantener o ajustar el despliegue.
+1. **Estrategia y liderazgo**  
+   Objetivos, patrocinio ejecutivo, equipo responsable, alcance y criterios de éxito.
 
-## 2. Requisitos técnicos y licenciamiento
+2. **Preparación técnica**  
+   Licenciamiento, identidad, Exchange Online, aplicaciones compatibles, canales de actualización y conectividad.
 
-- [ ] La organización dispone de una suscripción base compatible con Microsoft 365 Copilot.
-- [ ] Las licencias de Microsoft 365 Copilot se asignarán a usuarios o grupos claramente identificados.
-- [ ] Las personas usuarias disponen de una cuenta de Microsoft Entra ID.
-- [ ] El buzón principal de las personas usuarias está alojado en Exchange Online cuando se requiera fundamentación con correo y calendario.
-- [ ] Los sistemas operativos y navegadores utilizados son compatibles.
-- [ ] Se han revisado los puntos de conexión de red necesarios.
-- [ ] Las aplicaciones de Microsoft 365 están preparadas para ofrecer las experiencias de Copilot previstas.
-- [ ] Se han documentado las diferencias entre Copilot Chat, Microsoft 365 Copilot y los agentes que se utilizarán.
+3. **Seguridad, datos y cumplimiento**  
+   Permisos, acceso a la información, protección de datos, auditoría y controles de cumplimiento.
 
-## 3. Seguridad, datos y cumplimiento
+4. **Adopción y casos de uso**  
+   Grupo piloto, escenarios prioritarios, champions, formación, comunicación, comunidad y soporte.
 
-- [ ] Se han revisado los permisos actuales sobre la información corporativa.
-- [ ] Se han identificado contenidos sensibles, obsoletos o compartidos de forma inadecuada.
-- [ ] Se han revisado las políticas de acceso, uso compartido y protección de la información.
-- [ ] Se ha valorado el uso de etiquetas de confidencialidad y otras capacidades de Microsoft Purview.
-- [ ] Se han revisado las necesidades de auditoría, retención y cumplimiento.
-- [ ] Se han definido responsables para corregir riesgos o accesos detectados.
-- [ ] Se ha comunicado que Copilot respeta los permisos existentes y que no sustituye una correcta gobernanza de la información.
+5. **Medición y mejora continua**  
+   Métricas, feedback, revisión de licencias, casos de éxito y criterios para ampliar el despliegue.
 
-## 4. Selección del piloto
+La preparación para crear y desplegar agentes se presenta como un **módulo complementario**. No reduce la puntuación de una organización que quiera comenzar con Microsoft 365 Copilot sin crear agentes todavía.
 
-- [ ] Se ha definido un grupo piloto reducido y representativo.
-- [ ] Las personas seleccionadas tienen casos de uso concretos y están dispuestas a compartir feedback.
-- [ ] Se han incluido equipos que trabajan de forma habitual con las aplicaciones de Microsoft 365.
-- [ ] Las licencias se han asignado de forma intencionada, no únicamente por disponibilidad.
-- [ ] Se ha definido la duración y el alcance del piloto.
-- [ ] Se han establecido canales para comunicar incidencias, dudas y aprendizajes.
-- [ ] Se han acordado los criterios que determinarán si el despliegue puede ampliarse.
+## Cómo funciona
 
-## 5. Casos de uso
+Cada comprobación ofrece cuatro respuestas cerradas:
 
-- [ ] Se han identificado tareas frecuentes en las que Copilot puede aportar valor.
-- [ ] Cada caso de uso tiene una necesidad, una audiencia y un resultado esperado.
-- [ ] Se han priorizado casos de uso sencillos que permitan aprender y demostrar valor.
-- [ ] Se han evitado escenarios donde el riesgo sea superior al beneficio esperado.
-- [ ] Se han preparado ejemplos y prompts vinculados al trabajo real de las personas usuarias.
-- [ ] Se ha definido cuándo utilizar Copilot Chat, Microsoft 365 Copilot o un agente.
-- [ ] Se han documentado los casos de uso que no deben abordarse todavía.
+- **Verificado:** la comprobación está completada y existe evidencia suficiente.
+- **En curso:** se está trabajando en ella, pero todavía no está completada.
+- **No iniciado:** no se ha comenzado o no existe una decisión al respecto.
+- **No aplica:** la comprobación no corresponde al alcance de la evaluación y se excluye del cálculo.
 
-## 6. Adopción, formación y comunicación
+La evaluación utiliza únicamente estas selecciones para calcular el resultado. No solicita datos de configuración, documentos ni información identificativa.
 
-- [ ] Existe un plan de comunicación previo al despliegue.
-- [ ] Se han identificado champions y early adopters.
-- [ ] Se ha preparado una formación inicial basada en escenarios reales.
-- [ ] Se han explicado las capacidades y limitaciones de Copilot.
-- [ ] Se han compartido pautas para revisar y validar las respuestas generadas.
-- [ ] Existe un espacio de comunidad para preguntas, recursos y buenas prácticas.
-- [ ] Se ha planificado formación continua, no solo una sesión de lanzamiento.
-- [ ] Las personas responsables y managers conocen su papel en la adopción.
+## Modelo de puntuación
 
-## 7. Preparación de agentes
+La puntuación se calcula de forma orientativa:
 
-- [ ] Se han identificado procesos recurrentes que podrían necesitar un agente.
-- [ ] Se ha comprobado si el escenario puede resolverse antes con Copilot o con un prompt reutilizable.
-- [ ] Cada agente tiene un objetivo, una audiencia y un propietario claramente definidos.
-- [ ] Se han validado las fuentes de conocimiento que utilizará el agente.
-- [ ] Se han revisado los permisos de acceso a las fuentes.
-- [ ] Se ha elegido la experiencia de creación adecuada para cada agente.
-- [ ] Se han evaluado las necesidades de licenciamiento, consumo y coste.
-- [ ] Se han definido pruebas, criterios de publicación y proceso de mantenimiento.
-- [ ] Se han configurado las políticas de acceso, uso compartido y publicación aplicables.
-- [ ] Se ha previsto cómo retirar o actualizar agentes que dejen de ser útiles.
+- **Verificado:** 2 puntos.
+- **En curso:** 1 punto.
+- **No iniciado:** 0 puntos.
+- **No aplica:** se excluye del cálculo.
 
-## 8. Soporte y salida a producción
+```text
+Puntuación = puntos obtenidos / puntos posibles aplicables × 100
+```
 
-- [ ] El equipo de soporte conoce el alcance del despliegue.
-- [ ] Se han preparado respuestas para incidencias y dudas frecuentes.
-- [ ] Existe un canal claro para solicitar ayuda.
-- [ ] Se han documentado las responsabilidades de IT, adopción, seguridad y negocio.
-- [ ] Se han comunicado la fecha, el alcance y los usuarios incluidos en el despliegue.
-- [ ] Se ha validado la experiencia de acceso antes de la salida a producción.
-- [ ] Se ha preparado un mecanismo para escalar incidencias relevantes.
+Los requisitos imprescindibles funcionan como **controles de bloqueo**. Una puntuación general alta no compensa un requisito crítico sin resolver.
 
-## 9. Medición y mejora continua
+Por ejemplo, si la organización obtiene una puntuación elevada, pero no ha verificado un requisito esencial de licenciamiento, identidad o preparación técnica, el resultado indicará que todavía existe un bloqueo para iniciar el piloto.
 
-- [ ] Se han definido métricas de uso, satisfacción y resultados.
-- [ ] Se revisan los datos de adopción disponibles en las herramientas de Microsoft.
-- [ ] Se recoge feedback cualitativo de las personas usuarias.
-- [ ] Se documentan y comparten casos de éxito.
-- [ ] Se identifican barreras de uso y necesidades de formación.
-- [ ] Se revisan periódicamente las licencias asignadas y su utilización.
-- [ ] Se incorporan nuevos casos de uso de forma controlada.
-- [ ] Se revisan los agentes publicados, su utilidad y su mantenimiento.
-- [ ] Se realizan revisiones periódicas con los responsables de negocio y del despliegue.
-- [ ] Existe un plan de mejora continua basado en datos y feedback.
+## Estados de preparación
 
----
+### Requiere preparación
 
-## 📌 Resultado de la revisión
+Existe al menos un requisito imprescindible sin resolver. El resultado identifica los bloqueos y las acciones prioritarias.
 
-| Estado | Criterio orientativo |
-|---|---|
-| 🔴 **No preparado** | Existen requisitos esenciales, responsables o controles sin definir. |
-| 🟠 **Preparación en curso** | El piloto puede planificarse, pero todavía hay puntos relevantes pendientes. |
-| 🟢 **Preparado para piloto** | Los requisitos técnicos, de seguridad, adopción y medición del piloto están cubiertos. |
-| 🔵 **Preparado para ampliar** | El piloto ha generado resultados, feedback y criterios suficientes para una ampliación controlada. |
+### Preparación en curso
 
-> Esta valoración es orientativa. Cada organización debe adaptar la checklist a su contexto, normativa, riesgos y modelo de gobierno.
+Los requisitos básicos están parcialmente cubiertos, pero todavía faltan elementos relevantes para iniciar un piloto controlado.
 
-## 📚 Referencias oficiales
+### Preparada para piloto
 
-- [Requisitos mínimos para desplegar Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements)
-- [Checklist de planificación para la adopción de Microsoft 365 Copilot](https://adoption.microsoft.com/en-us/copilot/essential-guide/plan/)
-- [Copilot Success Kit](https://adoption.microsoft.com/en-us/copilot/success-kit/)
-- [Checklist de despliegue de agentes de Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/copilot/agent-essentials/m365-agents-checklist)
+Los requisitos esenciales están verificados y la organización dispone de un equipo responsable, un grupo piloto, casos de uso iniciales, formación, soporte y métricas para evaluar el piloto.
+
+### Preparada para ampliar
+
+El piloto ha generado resultados y feedback, y la organización dispone de seguimiento de uso, formación continua, gobierno periódico y criterios para ampliar licencias y escenarios.
+
+> Los niveles y umbrales utilizados son criterios orientativos de IA Toolbox. Microsoft no publica una puntuación universal que certifique el nivel de preparación de una organización.
+
+## Resultado de la evaluación
+
+Al finalizar se muestra:
+
+- Estado general de preparación.
+- Puntuación orientativa.
+- Resultado por dimensión.
+- Número de bloqueos críticos.
+- Comprobaciones pendientes.
+- Acciones prioritarias recomendadas.
+- Decisión orientativa sobre el siguiente paso.
+
+## Informe de resultados
+
+La evaluación permite generar una vista resumida con:
+
+- el estado general;
+- la puntuación orientativa;
+- el resultado por dimensión;
+- los bloqueos detectados;
+- y las acciones prioritarias pendientes.
+
+La opción **Guardar informe en PDF** abre la función de impresión del navegador. Desde ella puedes seleccionar **Guardar como PDF**.
+
+El informe se genera localmente y se guarda únicamente en el dispositivo desde el que realizas la evaluación.
+
+## Privacidad y tratamiento de la información
+
+Esta evaluación está diseñada para funcionar completamente en el navegador.
+
+- Las respuestas se procesan localmente mediante JavaScript.
+- No se envían respuestas a ningún servidor.
+- No se utilizan formularios externos, APIs ni bases de datos.
+- No se utilizan cookies, `localStorage` ni `sessionStorage` para conservar las respuestas.
+- No se integra ningún servicio de analítica en el recurso.
+- No se solicitan nombres, correos electrónicos, dominios, archivos ni información identificativa.
+- Las respuestas desaparecen al actualizar o cerrar la página.
+- El recurso solo utiliza las selecciones necesarias para calcular el resultado orientativo.
+
+### Información que no debes introducir ni compartir
+
+No introduzcas ni compartas:
+
+- Información confidencial de la organización.
+- Datos personales o identificativos.
+- Nombres de clientes, personas, proyectos o departamentos.
+- Configuraciones internas de seguridad.
+- Políticas, credenciales, claves o información de acceso.
+- Documentos, capturas o contenidos corporativos.
+- Detalles técnicos que puedan revelar la configuración del tenant.
+
+La evaluación no necesita esa información. Solo debes seleccionar el estado que mejor represente cada comprobación.
+
+## Privacidad del informe
+
+El informe también se genera completamente en el navegador.
+
+- IA Toolbox no recibe ni almacena el informe.
+- El informe no se envía a ningún servicio externo.
+- El PDF se guarda únicamente en el dispositivo de la persona usuaria.
+- El informe no contiene datos identificativos porque la evaluación no los solicita.
+
+## Alcance y limitaciones
+
+El resultado no constituye:
+
+- Una certificación oficial de Microsoft.
+- Una auditoría técnica o de seguridad.
+- Una evaluación de cumplimiento normativo.
+- Una validación automática de la configuración del tenant.
+- Una garantía de preparación para desplegar Microsoft 365 Copilot.
+
+Para validar la configuración real de un entorno deben utilizarse las herramientas e informes oficiales de Microsoft y realizarse las revisiones técnicas, de seguridad, cumplimiento y adopción correspondientes.
+
+## Complementa la evaluación con herramientas oficiales
+
+La autoevaluación ayuda a ordenar decisiones y detectar áreas pendientes, pero no consulta la configuración del tenant.
+
+Para completar la revisión técnica, Microsoft dispone de recursos como:
+
+- El **Microsoft Copilot Readiness Report** del Centro de administración de Microsoft 365, que muestra elegibilidad técnica, licencias, canales de actualización y señales de uso de aplicaciones.
+- El **Microsoft Copilot Optimization Assessment**, recomendado por Microsoft antes del despliegue para evaluar la madurez del gobierno de datos y los controles de seguridad.
+- El **Automated Readiness Assessment for Microsoft 365 Copilot and Agents**, que analiza configuraciones reales mediante APIs y genera observaciones y recomendaciones priorizadas.
+
+## Referencias oficiales
+
+- [Microsoft Copilot Readiness Report](https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/microsoft-365-copilot-readiness?view=o365-worldwide)
+- [Microsoft Copilot adoption and onboarding guide for IT admins](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Microsoft 365 Copilot adoption planning checklist](https://adoption.microsoft.com/en-us/copilot/essential-guide/plan/)
 - [Microsoft 365 Copilot Adoption Playbook](https://www.microsoft.com/en-us/microsoft-365-copilot/copilot-adoption-guide)
+- [Automated Readiness Assessment for Microsoft 365 Copilot and Agents](https://github.com/microsoft/m365-copilot-automated-readiness-assessment)
 
-## 🤝 Uso y contribuciones
+## Verificación técnica de cada versión
+
+Antes de publicar una versión del HTML se revisará que:
+
+- no transmita respuestas;
+- no conserve respuestas en el navegador;
+- no utilice cookies;
+- no utilice almacenamiento local o de sesión;
+- no contenga formularios de envío;
+- no permita subir archivos;
+- no integre servicios de analítica;
+- no solicite información confidencial;
+- y no necesite datos identificativos para calcular el resultado.
+
+El resultado de esta verificación se documentará en las notas de versión.
+
+## Archivos del recurso
+
+```text
+recursos/
+└── evaluacion-preparacion-m365-copilot/
+    ├── README.md
+    └── index.html
+```
+
+- `README.md`: explicación, metodología, privacidad, alcance y referencias.
+- `index.html`: evaluación interactiva lista para utilizar desde GitHub Pages.
+
+## Uso y contribuciones
 
 Este recurso forma parte de **IA Toolbox**, una colección de materiales prácticos sobre inteligencia artificial aplicada, Microsoft 365 Copilot y agentes.
 
-Si detectas algún punto que deba actualizarse o quieres proponer una mejora, puedes abrir una incidencia en el repositorio.
+Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes abrir una incidencia en el repositorio.
 
 ---
 
 **Adrián Espés** · Microsoft MVP · M365 Copilot  
 [adrianespes.com](https://adrianespes.com)
 
-**Versión:** 1.0 · **Publicado:** 20 de agosto de 2026
+**Versión del README:** 1.0  
+**Publicado:** 20 de agosto de 2026  
+**Estado del HTML:** pendiente de diseño, implementación y verificación técnica
