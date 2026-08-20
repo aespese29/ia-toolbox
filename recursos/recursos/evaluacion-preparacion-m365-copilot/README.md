@@ -206,7 +206,7 @@ recursos/
 
 Este recurso forma parte de **IA Toolbox**, una colección de materiales prácticos sobre inteligencia artificial aplicada, Microsoft 365 Copilot y agentes.
 
-Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes abrir una incidencia en el repositorio.
+Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes escribirme a aespes@adrianespes.com.
 
 ---
 
