@@ -7,11 +7,20 @@ Descubre si tu organización necesita seguir preparándose, está lista para ini
 
 ## Abrir la evaluación interactiva
 
-[Iniciar la evaluación de preparación para Microsoft 365 Copilot](https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/)
+**[Iniciar ahora la evaluación de preparación para Microsoft 365 Copilot](https://aespese29.github.io/ia-toolbox/recursos/evaluacion-preparacion-m365-copilot/)**
 
-La evaluación se ejecuta directamente en el navegador. No necesitas instalar aplicaciones, descargar archivos ni iniciar sesión.
+La evaluación se abre como una aplicación web mediante GitHub Pages. No necesitas instalar aplicaciones, descargar archivos ni iniciar sesión.
 
-> El enlace estará disponible cuando el archivo `index.html` se publique en esta carpeta y GitHub Pages complete el despliegue del repositorio.
+Si el enlace anterior todavía no muestra la evaluación, comprueba que este recurso se haya publicado exactamente con esta estructura y nombres, respetando mayúsculas y minúsculas:
+
+```text
+recursos/
+└── evaluacion-preparacion-m365-copilot/
+    ├── README.md
+    └── index.html
+```
+
+También puedes [consultar el archivo fuente `index.html`](./index.html) desde esta carpeta. Este segundo enlace muestra el archivo dentro de GitHub; para utilizar la evaluación renderizada, usa siempre el botón **Iniciar ahora la evaluación**.
 
 ## Qué permite evaluar
 
@@ -188,7 +197,11 @@ Antes de publicar una versión del HTML se revisará que:
 - no solicite información confidencial;
 - y no necesite datos identificativos para calcular el resultado.
 
-El resultado de esta verificación se documentará en las notas de versión.
+### Verificación de la versión 1.0
+
+La versión 1.0 se ha revisado para confirmar que no transmite ni conserva respuestas, no utiliza cookies o almacenamiento del navegador, no contiene formularios de envío, no permite subir archivos y no integra servicios de analítica.
+
+**Fecha de verificación técnica:** 20 de agosto de 2026.
 
 ## Archivos del recurso
 
@@ -206,13 +219,14 @@ recursos/
 
 Este recurso forma parte de **IA Toolbox**, una colección de materiales prácticos sobre inteligencia artificial aplicada, Microsoft 365 Copilot y agentes.
 
-Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes escribirme a aespes@adrianespes.com.
+Si detectas un punto que deba actualizarse o quieres proponer una mejora, puedes abrir una incidencia en el repositorio.
 
 ---
 
 **Adrián Espés** · Microsoft MVP · M365 Copilot  
 [adrianespes.com](https://adrianespes.com)
 
-**Versión del README:** 1.0  
+**Versión del recurso:** 1.0  
 **Publicado:** 20 de agosto de 2026  
-**Estado del HTML:** pendiente de diseño, implementación y verificación técnica
+**Estado del HTML:** implementado y verificado técnicamente
+
