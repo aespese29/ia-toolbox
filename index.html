@@ -107,12 +107,16 @@
 
     .hero-logo {
       flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero-logo img {
-      width: 100px;
+      width: clamp(80px, 12vw, 120px);
       height: auto;
       filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+      object-fit: contain;
     }
 
     .hero-text {
@@ -193,6 +197,7 @@
       align-items: baseline;
       gap: 16px;
       margin-bottom: 48px;
+      flex-wrap: wrap;
     }
 
     .section-intro h2 {
@@ -320,10 +325,14 @@
     }
 
     .footer-logo {
-      width: 40px;
+      width: clamp(32px, 6vw, 48px);
       height: auto;
-      opacity: 0.8;
-      transition: opacity 0.2s ease;
+      transition: transform 0.2s ease;
+      object-fit: contain;
+    }
+
+    footer:hover .footer-logo {
+      transform: scale(1.05);
     }
 
     footer a {
@@ -356,12 +365,6 @@
 
       .hero-logo {
         width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-
-      .hero-logo img {
-        width: 80px;
       }
 
       .hero-tags {
@@ -370,6 +373,10 @@
 
       section {
         padding: 60px 0;
+      }
+
+      .section-intro {
+        justify-content: center;
       }
 
       .grid {
@@ -409,16 +416,7 @@
     <div class="wrap">
       <div class="hero-content">
         <div class="hero-logo">
-          <svg viewBox="0 0 200 200" width="100" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" rx="40" fill="#075E63"/>
-            <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
-            <!-- Letra A -->
-            <path d="M 50 80 L 75 50 L 100 80 M 60 100 L 90 100" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <!-- Letra E -->
-            <path d="M 110 50 L 110 130 M 110 50 L 150 50 M 110 90 L 145 90 M 110 130 L 150 130" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <!-- Acento coral -->
-            <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
-          </svg>
+          <img src="assets/img/logo-ae-isotipo.png" alt="Adrián Espés · AE logo" width="120" height="120">
         </div>
         <div class="hero-text">
           <div class="kicker">by Adrián Espés · Microsoft MVP</div>
@@ -505,13 +503,7 @@
 
   <footer>
     <div class="wrap">
-      <svg class="footer-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <rect width="200" height="200" rx="40" fill="#075E63"/>
-        <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
-        <path d="M 50 80 L 75 50 L 100 80 M 60 100 L 90 100" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 110 50 L 110 130 M 110 50 L 150 50 M 110 90 L 145 90 M 110 130 L 150 130" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
-      </svg>
+      <img src="assets/img/logo-ae-isotipo.png" alt="AE logo" class="footer-logo" width="48" height="48">
       <div class="footer-text">
         Hecho con ❤️ por <strong>Adrián Espés</strong> · Microsoft MVP · M365 Copilot ·
         <a href="https://adrianespes.com">adrianespes.com</a>
