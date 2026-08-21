@@ -1,21 +1,22 @@
 # 💬 Pronteca · Librería de prompts reutilizables
 
-Colección de prompts que funcionan bien, organizados por tarea. Copia, adapta y usa.
+Colección de prompts que funcionan bien, organizados por tarea. **Copia, adapta y usa.**
 
-> 💡 Un buen prompt suele tener 4 piezas: **rol · tarea · contexto · formato**.
+> 💡 Un buen prompt suele tener **4 piezas**: rol · tarea · contexto · formato.
 
-## 📇 Índice por tarea
+## 🗂️ Categorías
 
-| Tarea | Prompt de ejemplo |
-|---|---|
-| ✍️ Redactar | Ver abajo · "Borrador de correo" |
-| 📄 Resumir | Ver abajo · "Resumen accionable" |
-| 📊 Analizar datos | Ver abajo · "De la tabla al insight" |
-| 🎨 Visualizar | Ver abajo · "Infografía en HTML" |
+- 📝 **Redacción** — Correos, artículos, resúmenes
+- 📊 **Análisis** — Datos, información, tendencias
+- 🎨 **Creatividad** — Diseño, contenido visual, brainstorm
+- 🔍 **Investigación** — Búsqueda, síntesis, preguntas
+- 💼 **Productividad** — Organización, planificación, métodos
 
 ---
 
-### ✍️ Borrador de correo
+## 📇 Prompts destacados
+
+### 📝 Borrador de correo
 ```
 Actúa como [rol]. Redacta un correo para [audiencia] sobre [tema].
 Contexto: [detalles clave]. Tono: [cercano / formal]. Longitud: máx. 10 líneas.
@@ -40,8 +41,43 @@ Genera el código de una infografía en HTML que visualice estos datos, con dise
 moderno, tarjetas visuales y tipografía limpia. Datos: [pega aquí].
 ```
 
+### 🚀 Brainstorm estructurado
+```
+Genera 10 ideas sobre [tema] desde diferentes ángulos:
+1. Perspectiva del usuario
+2. Perspectiva técnica
+3. Perspectiva de negocio
+4. Perspectiva de innovación
+
+Para cada idea, añade: qué, por qué, cómo y riesgos potenciales.
+```
+
 ---
 
 ## ➕ Añadir tu prompt
-Crea un archivo `mi-prompt.md` en esta carpeta con: **título**, **para qué sirve**,
-**el prompt** (en bloque de código) y **dónde usarlo**.
+
+Crea un archivo `mi-prompt.md` en esta carpeta con:
+
+```markdown
+# 📌 Título del prompt
+
+**Para qué sirve:** Descripción breve de la tarea.
+
+**Dónde usarlo:** En qué aplicación o contexto funciona mejor.
+
+**El prompt:**
+\`\`\`
+[Aquí tu prompt completo]
+\`\`\`
+
+**Ejemplo de salida:**
+[Muestra un resultado o caso de uso]
+```
+
+Luego envíalo a **aespes@adrianespes.com** y lo publicaremos dándote crédito. 👍
+
+---
+
+> **Consejo:** Los mejores prompts suelen ser específicos, claros y dejan espacio para la adaptación.
+
+© Adrián Espés · [adrianespes.com](https://adrianespes.com)
