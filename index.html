@@ -17,30 +17,19 @@
       --ae-border: #E3EAEB;
       --ae-bg: #FAFBF9;
       --ae-surface: #FFFFFF;
-      --ae-radius-s: 6px;
-      --ae-radius-m: 12px;
-      --ae-radius-l: 16px;
-      --ae-shadow-soft: 0 8px 24px rgba(18, 50, 56, 0.08);
-      --ae-shadow-hover: 0 12px 32px rgba(18, 50, 56, 0.12);
+      --ae-white: #FFFFFF;
       --ae-font-title: 'Manrope', system-ui, -apple-system, sans-serif;
       --ae-font-body: 'Inter', system-ui, -apple-system, sans-serif;
     }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --ae-text: #EEF1F8;
-        --ae-muted: #A9B2C7;
-        --ae-bg: #0D1017;
-        --ae-surface: #161B26;
-        --ae-border: #252C3A;
-      }
-    }
-
-    /* RESET Y BASE */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -49,10 +38,6 @@
       color: var(--ae-text);
       line-height: 1.6;
       font-size: 16px;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     a {
@@ -65,7 +50,6 @@
       color: var(--ae-accent);
     }
 
-    /* CONTENEDOR */
     .wrap {
       max-width: 1200px;
       margin: 0 auto;
@@ -73,81 +57,94 @@
     }
 
     /* ═══════════════════════════════════════════════════════════ */
-    /* HEADER / HERO */
+    /* HEADER */
     /* ═══════════════════════════════════════════════════════════ */
 
-    header.hero {
-      background: linear-gradient(135deg, var(--ae-primary) 0%, var(--ae-dark) 100%);
-      color: var(--ae-surface);
-      padding: 80px 0 100px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    header.hero::before {
-      content: '';
-      position: absolute;
+    header {
+      background: var(--ae-bg);
+      border-bottom: 1px solid var(--ae-border);
+      padding: 20px 0;
+      position: sticky;
       top: 0;
-      right: -100px;
-      width: 400px;
-      height: 400px;
-      background: rgba(242, 84, 75, 0.1);
-      border-radius: 50%;
-      pointer-events: none;
+      z-index: 100;
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 1;
+    .header-wrap {
       display: flex;
       align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .hero-logo {
-      flex: 0 0 auto;
+    .logo-section {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 12px;
     }
 
-    .hero-logo img {
-      width: clamp(80px, 12vw, 120px);
-      height: auto;
-      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+    .logo-img {
+      width: 50px;
+      height: 50px;
       object-fit: contain;
     }
 
-    .hero-text {
-      flex: 1;
-      min-width: 300px;
+    .logo-text h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-family: var(--ae-font-title);
+      color: var(--ae-dark);
+      margin: 0;
     }
 
-    .hero .kicker {
-      font-size: 0.9rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.9;
-      margin-bottom: 12px;
-      font-weight: 600;
-      font-family: var(--ae-font-body);
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--ae-muted);
+      margin: 2px 0 0;
     }
 
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.2rem);
+    /* ═══════════════════════════════════════════════════════════ */
+    /* HERO */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    .hero {
+      background: var(--ae-surface);
+      padding: 80px 0;
+      border-bottom: 1px solid var(--ae-border);
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-content h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 800;
       font-family: var(--ae-font-title);
-      margin-bottom: 16px;
+      color: var(--ae-dark);
       line-height: 1.1;
+      margin-bottom: 20px;
     }
 
-    .hero p {
+    .hero-content p {
       font-size: 1.1rem;
-      opacity: 0.95;
-      margin-bottom: 32px;
-      max-width: 600px;
+      color: var(--ae-text);
       line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 550px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--ae-primary);
+      color: var(--ae-white);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-family: var(--ae-font-body);
     }
 
     .hero-tags {
@@ -157,66 +154,95 @@
     }
 
     .tag {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      color: var(--ae-surface);
-      padding: 8px 16px;
-      border-radius: 999px;
-      font-size: 0.85rem;
+      background: var(--ae-bg);
+      border: 1px solid var(--ae-border);
+      color: var(--ae-text);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
       font-weight: 600;
       font-family: var(--ae-font-body);
-      backdrop-filter: blur(10px);
       transition: all 0.2s ease;
     }
 
     .tag:hover {
-      background: rgba(255, 255, 255, 0.18);
-      border-color: rgba(255, 255, 255, 0.35);
-      transform: translateY(-2px);
+      border-color: var(--ae-primary);
+      color: var(--ae-primary);
+      background: var(--ae-bg);
+    }
+
+    .hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--ae-primary) 0%, #0A747A 100%);
+      border-radius: 16px;
+      padding: 40px;
+      min-height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(242, 84, 75, 0.1);
+      border-radius: 50%;
+      top: -100px;
+      right: -100px;
+    }
+
+    .hero-logo-large {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
     }
 
     /* ═══════════════════════════════════════════════════════════ */
-    /* SECCIONES */
+    /* SECTION */
     /* ═══════════════════════════════════════════════════════════ */
 
     section {
       padding: 80px 0;
+      background: var(--ae-surface);
+      border-bottom: 1px solid var(--ae-border);
     }
 
-    section h2 {
-      font-size: clamp(1.8rem, 3vw, 2.2rem);
-      font-weight: 700;
-      font-family: var(--ae-font-title);
-      margin-bottom: 12px;
-      color: var(--ae-dark);
+    section:nth-child(even) {
+      background: var(--ae-bg);
     }
 
-    .section-intro {
+    .section-header {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 16px;
       margin-bottom: 48px;
-      flex-wrap: wrap;
     }
 
-    .section-intro h2 {
-      margin-bottom: 0;
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 800;
+      font-family: var(--ae-font-title);
+      color: var(--ae-dark);
+      margin: 0;
     }
 
     .section-divider {
-      width: 48px;
-      height: 3px;
+      width: 50px;
+      height: 4px;
       background: var(--ae-accent);
       border-radius: 999px;
       flex-shrink: 0;
-      align-self: center;
     }
 
-    .section-sub {
-      color: var(--ae-muted);
+    .section-subtitle {
       font-size: 1.05rem;
-      margin-bottom: 0;
+      color: var(--ae-muted);
+      margin-bottom: 12px;
     }
 
     /* ═══════════════════════════════════════════════════════════ */
@@ -225,15 +251,14 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 28px;
-      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
     }
 
     .card {
       background: var(--ae-surface);
       border: 1px solid var(--ae-border);
-      border-radius: var(--ae-radius-l);
+      border-radius: 12px;
       padding: 32px 28px;
       text-decoration: none;
       color: inherit;
@@ -245,35 +270,41 @@
       overflow: hidden;
     }
 
+    section:nth-child(even) .card {
+      background: var(--ae-surface);
+    }
+
     .card::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 3px;
+      height: 4px;
       background: var(--ae-primary);
-      transform: translateX(-100%);
+      transform: scaleX(0);
+      transform-origin: left;
       transition: transform 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--ae-shadow-hover);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(7, 94, 99, 0.12);
       border-color: var(--ae-primary);
     }
 
     .card:hover::before {
-      transform: translateX(0);
+      transform: scaleX(1);
     }
 
     .card .icon {
-      font-size: 2.8rem;
+      font-size: 3rem;
       line-height: 1;
+      text-align: center;
     }
 
     .card h3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 700;
       font-family: var(--ae-font-title);
       color: var(--ae-dark);
@@ -293,14 +324,16 @@
       align-items: center;
       gap: 8px;
       color: var(--ae-primary);
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.95rem;
-      margin-top: 8px;
+      margin-top: 12px;
       transition: gap 0.2s ease;
+      font-family: var(--ae-font-title);
     }
 
     .card:hover .card-cta {
       gap: 12px;
+      color: var(--ae-accent);
     }
 
     /* ═══════════════════════════════════════════════════════════ */
@@ -309,44 +342,67 @@
 
     footer {
       background: var(--ae-dark);
-      color: var(--ae-surface);
-      padding: 48px 0;
-      margin-top: 60px;
-      border-top: 1px solid var(--ae-border);
-      text-align: center;
+      color: var(--ae-white);
+      padding: 60px 0;
     }
 
-    footer .wrap {
+    .footer-wrap {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .footer-logo-section {
       display: flex;
       align-items: center;
+      gap: 16px;
+    }
+
+    .footer-logo-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer-info h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: var(--ae-font-title);
+      color: var(--ae-white);
+      margin: 0 0 4px;
+    }
+
+    .footer-info p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+
+    .footer-links {
+      display: flex;
       justify-content: center;
-      gap: 24px;
+      gap: 32px;
       flex-wrap: wrap;
     }
 
-    .footer-logo {
-      width: clamp(32px, 6vw, 48px);
-      height: auto;
-      transition: transform 0.2s ease;
-      object-fit: contain;
-    }
-
-    footer:hover .footer-logo {
-      transform: scale(1.05);
-    }
-
-    footer a {
+    .footer-links a {
       color: var(--ae-accent);
       font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
     }
 
-    footer a:hover {
+    .footer-links a:hover {
+      color: var(--ae-white);
       text-decoration: underline;
     }
 
-    .footer-text {
-      font-size: 0.95rem;
-      opacity: 0.85;
+    .footer-rights {
+      text-align: right;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
     }
 
     /* ═══════════════════════════════════════════════════════════ */
@@ -354,54 +410,45 @@
     /* ═══════════════════════════════════════════════════════════ */
 
     @media (max-width: 768px) {
-      header.hero {
-        padding: 60px 0 80px;
+      .hero-wrap {
+        grid-template-columns: 1fr;
       }
 
-      .hero-content {
-        flex-direction: column;
+      .hero-visual {
+        min-height: 300px;
+        padding: 30px;
+      }
+
+      .hero-logo-large {
+        width: 150px;
+        height: 150px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-wrap {
+        grid-template-columns: 1fr;
+        gap: 24px;
         text-align: center;
       }
 
-      .hero-logo {
-        width: 100%;
+      .footer-links {
+        justify-content: center;
       }
 
-      .hero-tags {
-        justify-content: center;
+      .footer-rights {
+        text-align: center;
       }
 
       section {
         padding: 60px 0;
       }
 
-      .section-intro {
-        justify-content: center;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .card {
-        padding: 24px 20px;
-      }
-
-      footer .wrap {
+      .section-header {
         flex-direction: column;
-        gap: 16px;
-      }
-    }
-
-    /* MODO OSCURO - AJUSTES */
-    @media (prefers-color-scheme: dark) {
-      section h2 {
-        color: var(--ae-surface);
-      }
-
-      .card h3 {
-        color: var(--ae-surface);
+        align-items: flex-start;
       }
     }
   </style>
@@ -409,24 +456,17 @@
 <body>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- HEADER / HERO -->
+  <!-- HEADER -->
   <!-- ═══════════════════════════════════════════════════════════ -->
 
-  <header class="hero">
+  <header>
     <div class="wrap">
-      <div class="hero-content">
-        <div class="hero-logo">
-          <img src="assets/img/logo-ae-isotipo.png" alt="Adrián Espés · AE logo" width="120" height="120">
-        </div>
-        <div class="hero-text">
-          <div class="kicker">by Adrián Espés · Microsoft MVP</div>
-          <h1>🧰 IA Toolbox</h1>
-          <p>Una caja de herramientas abierta sobre <strong>IA aplicada</strong>, <strong>Microsoft Copilot</strong>, <strong>agentes</strong> y productividad. Copia, adapta y usa. Con o sin perfil técnico.</p>
-          <div class="hero-tags">
-            <span class="tag">🤖 Agentes</span>
-            <span class="tag">💬 Prompts</span>
-            <span class="tag">📚 Guías</span>
-            <span class="tag">📦 Recursos</span>
+      <div class="header-wrap">
+        <div class="logo-section">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiByeD0iNDAiIGZpbGw9IiMwNzVFNjMiLz4KPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkFGQkY5IiBzdHJva2Utd2lkdGg9IjEyIi8+CjwhLS0gQSBhbmQgRSBsZXR0ZXJzIGZvcm0gYXJlIGNvbXBsZXggY3VydmVzIGZyb20gdGhlIGxvZ28gLS0+CjxwYXRoIGQ9Ik0gNTAgOTAgTCA2MCAyMCBMIDgwIDEwMCBMIDkwIDEwMCBNIDYwIDUwIEwgOTAgNTAiIHN0cm9rZT0iI0ZBRkJGOSIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0gMTIwIDIwIEwgMTIwIDEwMCBNIDEyMCAyMCBMIDE1MCAyMCBNIDEyMCA2MCBMIDE0NyA2MCBNIDEyMCAxMDAgTCAxNTAgMTAwIiBzdHJva2U9IiNGQUZCRjkiIHN0cm9rZS13aWR0aD0iMTYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSIxMjAiIHk9IjEwMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE1IiBmaWxsPSIjRjI1NDRCK3MgbWFyayBvZiBjb2xvciIgcng9IjIiLz4KPC9zdmc+" alt="Adrián Espés" class="logo-img">
+          <div class="logo-text">
+            <h1>IA Toolbox</h1>
+            <p>by Adrián Espés</p>
           </div>
         </div>
       </div>
@@ -434,23 +474,54 @@
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- SECCIÓN PRINCIPAL -->
+  <!-- HERO -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-wrap">
+        <div class="hero-content">
+          <span class="hero-badge">Microsoft MVP · M365 Copilot</span>
+          <h2>Herramientas de IA para todos</h2>
+          <p>Una caja abierta de recursos sobre IA aplicada, Microsoft Copilot, agentes y productividad. Copia, adapta y usa. Desde nivel 0 hasta experto.</p>
+          <div class="hero-tags">
+            <span class="tag">🤖 Agentes</span>
+            <span class="tag">💬 Prompts</span>
+            <span class="tag">📚 Tutoriales</span>
+            <span class="tag">📦 Recursos</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <svg class="hero-logo-large" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="200" rx="40" fill="#075E63"/>
+            <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+            <path d="M 50 90 L 60 20 L 80 100 L 90 100 M 60 50 L 90 50" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 120 20 L 120 100 M 120 20 L 150 20 M 120 60 L 147 60 M 120 100 L 150 100" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MAIN CONTENT -->
   <!-- ═══════════════════════════════════════════════════════════ -->
 
   <section>
     <div class="wrap">
-      <div class="section-intro">
-        <h2>🧭 Explora la caja de herramientas</h2>
+      <div class="section-header">
+        <h2>🧭 Explora los recursos</h2>
         <div class="section-divider"></div>
       </div>
-      <p class="section-sub">Elige una sección. Copia, adapta y usa en tu día a día.</p>
+      <p class="section-subtitle">Selecciona una sección y comienza. Todo está listo para copiar y adaptar.</p>
 
       <div class="grid">
         <!-- AGENTES -->
         <a href="agentes/" class="card">
           <div class="icon">🤖</div>
           <h3>Agentes</h3>
-          <p>Instrucciones de agentes de Copilot Studio, listas para copiar y pegar.</p>
+          <p>Prompts y configuraciones de agentes de Copilot Studio listos para usar.</p>
           <span class="card-cta">Explorar →</span>
         </a>
 
@@ -458,7 +529,7 @@
         <a href="recursos/" class="card">
           <div class="icon">📦</div>
           <h3>Recursos</h3>
-          <p>Herramientas interactivas, infografías y material descargable.</p>
+          <p>Infografías, evaluaciones interactivas y herramientas descargables.</p>
           <span class="card-cta">Explorar →</span>
         </a>
 
@@ -466,7 +537,7 @@
         <a href="prompts/" class="card">
           <div class="icon">💬</div>
           <h3>Pronteca</h3>
-          <p>Librería de prompts reutilizables, organizada por tarea.</p>
+          <p>Librería de prompts reutilizables, organizados por categoría y caso de uso.</p>
           <span class="card-cta">Explorar →</span>
         </a>
 
@@ -474,7 +545,7 @@
         <a href="tutoriales/" class="card">
           <div class="icon">📚</div>
           <h3>Tutoriales</h3>
-          <p>Guías paso a paso de Copilot, agentes y GitHub Pages.</p>
+          <p>Guías paso a paso: Copilot, agentes, GitHub Pages y mucho más.</p>
           <span class="card-cta">Explorar →</span>
         </a>
 
@@ -482,15 +553,15 @@
         <a href="sessions/" class="card">
           <div class="icon">🎓</div>
           <h3>Seminarios</h3>
-          <p>Materiales de sesiones educativas, webinarios y eventos.</p>
+          <p>Materiales de webinarios, sesiones educativas y eventos en vivo.</p>
           <span class="card-cta">Explorar →</span>
         </a>
 
-        <!-- WEB & YOUTUBE -->
-        <a href="https://adrianespes.com" class="card">
+        <!-- WEB -->
+        <a href="https://adrianespes.com" class="card" target="_blank" rel="noopener">
           <div class="icon">🌐</div>
           <h3>Web & YouTube</h3>
-          <p>Artículos, análisis y vídeos sobre IA aplicada y Copilot.</p>
+          <p>Artículos detallados, análisis técnicos y vídeos sobre IA y Copilot.</p>
           <span class="card-cta">Visitar →</span>
         </a>
       </div>
@@ -503,12 +574,33 @@
 
   <footer>
     <div class="wrap">
-      <img src="assets/img/logo-ae-isotipo.png" alt="AE logo" class="footer-logo" width="48" height="48">
-      <div class="footer-text">
-        Hecho con ❤️ por <strong>Adrián Espés</strong> · Microsoft MVP · M365 Copilot ·
-        <a href="https://adrianespes.com">adrianespes.com</a>
+      <div class="footer-wrap">
+        <div class="footer-logo-section">
+          <svg class="footer-logo-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="200" rx="40" fill="#075E63"/>
+            <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+            <path d="M 50 90 L 60 20 L 80 100 L 90 100 M 60 50 L 90 50" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 120 20 L 120 100 M 120 20 L 150 20 M 120 60 L 147 60 M 120 100 L 150 100" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
+          </svg>
+          <div class="footer-info">
+            <h3>Adrián Espés</h3>
+            <p>Microsoft MVP · M365 Copilot Specialist</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://adrianespes.com" target="_blank" rel="noopener">Web</a>
+          <a href="https://linkedin.com/in/adrianespes" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://youtube.com/@adrianespes" target="_blank" rel="noopener">YouTube</a>
+          <a href="mailto:aespes@adrianespes.com">Contacto</a>
+        </div>
+
+        <div class="footer-rights">
+          <p><strong>© 2026 Adrián Espés</strong></p>
+          <p>Contenido bajo <strong>CC BY 4.0</strong></p>
+        </div>
       </div>
-      <div class="footer-text">Contenido bajo <strong>CC BY 4.0</strong></div>
     </div>
   </footer>
 
