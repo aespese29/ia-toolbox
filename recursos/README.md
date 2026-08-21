@@ -1,10 +1,23 @@
 # 📦 Recursos
 
-Cheat sheets, checklists y material descargable (PDF, imágenes, plantillas).
+Colección de herramientas interactivas, infografías, checklists y material descargable para usar inmediatamente.
 
-Sube aquí tus recursos y enlázalos desde el README principal o los tutoriales.
+## 🗂️ Categorías
 
-## Ideas para empezar
-- Cheat sheet de prompts básicos de Copilot.
-- Checklist de gobierno antes de desplegar Copilot Chat.
-- Guía rápida de agentes preconfigurados (Analyst, Researcher).
+| Categoría | Descripción | Acceder |
+|-----------|-------------|---------|
+| 🖼️ **Infografías M365** | Infografías sobre novedades de Microsoft 365 Copilot basadas en el Message Center | [`/infografias-m365`](./infografias-m365/) |
+| 📊 **Evaluaciones** | Herramientas interactivas de diagnóstico y autoevaluación | [`/evaluaciones`](./evaluaciones/) |
+
+---
+
+## 💡 Próximas categorías
+
+- 📋 Checklists y guías de verificación
+- 🧾 Cheat sheets y referencias rápidas
+- 🎨 Plantillas reutilizables
+- 📄 Documentos y guías descargables
+
+---
+
+> 💬 ¿Tienes un recurso que compartir? Envíalo a **aespes@adrianespes.com** y lo incluiremos dándote crédito.
