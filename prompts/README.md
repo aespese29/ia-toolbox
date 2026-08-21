@@ -54,27 +54,16 @@ Para cada idea, añade: qué, por qué, cómo y riesgos potenciales.
 
 ---
 
-## ➕ Añadir tu prompt
+## 💌 ¿Tienes un prompt que quieras compartir?
 
-Crea un archivo `mi-prompt.md` en esta carpeta con:
+Si tienes un prompt que funciona bien y crees que puede ser útil para otros, envíalo a **aespes@adrianespes.com** con:
 
-```markdown
-# 📌 Título del prompt
+- Nombre del prompt
+- Para qué sirve
+- El prompt completo
+- Un ejemplo de uso (opcional)
 
-**Para qué sirve:** Descripción breve de la tarea.
-
-**Dónde usarlo:** En qué aplicación o contexto funciona mejor.
-
-**El prompt:**
-\`\`\`
-[Aquí tu prompt completo]
-\`\`\`
-
-**Ejemplo de salida:**
-[Muestra un resultado o caso de uso]
-```
-
-Luego envíalo a **aespes@adrianespes.com** y lo publicaremos dándote crédito. 👍
+Si encaja en la colección, lo publicaremos dándote crédito. 👍
 
 ---
 
