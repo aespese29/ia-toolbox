@@ -5,95 +5,520 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IA Toolbox · by Adrián Espés</title>
   <meta name="description" content="Caja de herramientas de IA: agentes, prompts, tutoriales y recursos reutilizables sobre Microsoft Copilot.">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --azul:#0067b8; --violeta:#5b2e91; --tinta:#12172b;
-      --gris:#5b6478; --fondo:#f5f7fb; --tarjeta:#ffffff; --borde:#e6e9f2;
+    /* 🎨 TOKENS DE MARCA ADRIÁN ESPÉS */
+    :root {
+      --ae-primary: #075E63;
+      --ae-accent: #F2544B;
+      --ae-dark: #123238;
+      --ae-text: #263238;
+      --ae-muted: #66777A;
+      --ae-border: #E3EAEB;
+      --ae-bg: #FAFBF9;
+      --ae-surface: #FFFFFF;
+      --ae-radius-s: 6px;
+      --ae-radius-m: 12px;
+      --ae-radius-l: 16px;
+      --ae-shadow-soft: 0 8px 24px rgba(18, 50, 56, 0.08);
+      --ae-shadow-hover: 0 12px 32px rgba(18, 50, 56, 0.12);
+      --ae-font-title: 'Manrope', system-ui, -apple-system, sans-serif;
+      --ae-font-body: 'Inter', system-ui, -apple-system, sans-serif;
     }
-    @media (prefers-color-scheme: dark){
-      :root{ --tinta:#eef1f8; --gris:#a9b2c7; --fondo:#0d1017; --tarjeta:#161b26; --borde:#252c3a; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ae-text: #EEF1F8;
+        --ae-muted: #A9B2C7;
+        --ae-bg: #0D1017;
+        --ae-surface: #161B26;
+        --ae-border: #252C3A;
+      }
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.6}
-    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-    header.hero{background:linear-gradient(135deg,var(--azul),var(--violeta));color:#fff;padding:72px 0 64px;text-align:center}
-    .hero .kicker{font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-bottom:10px}
-    .hero h1{font-size:2.6rem;font-weight:800;margin-bottom:12px}
-    .hero p{font-size:1.15rem;opacity:.95;max-width:640px;margin:0 auto 28px}
-    .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
-      color:#fff;padding:6px 14px;border-radius:999px;font-size:.85rem;margin:4px;font-weight:600}
-    section{padding:56px 0}
-    h2{font-size:1.6rem;margin-bottom:8px;font-weight:700}
-    .sub{color:var(--gris);margin-bottom:32px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-    .card{background:var(--tarjeta);border:1px solid var(--borde);border-radius:16px;padding:26px;
-      text-decoration:none;color:inherit;transition:.2s;display:block}
-    .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.10);border-color:var(--azul)}
-    .card .ico{font-size:2rem;margin-bottom:12px}
-    .card h3{font-size:1.2rem;margin-bottom:6px}
-    .card p{color:var(--gris);font-size:.95rem}
-    footer{border-top:1px solid var(--borde);padding:32px 0;text-align:center;color:var(--gris);font-size:.9rem}
-    footer a{color:var(--azul);text-decoration:none;font-weight:600}
+
+    /* RESET Y BASE */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--ae-font-body);
+      background: var(--ae-bg);
+      color: var(--ae-text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--ae-primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--ae-accent);
+    }
+
+    /* CONTENEDOR */
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════ */
+    /* HEADER / HERO */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    header.hero {
+      background: linear-gradient(135deg, var(--ae-primary) 0%, var(--ae-dark) 100%);
+      color: var(--ae-surface);
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header.hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: rgba(242, 84, 75, 0.1);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-logo {
+      flex: 0 0 auto;
+    }
+
+    .hero-logo img {
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero .kicker {
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-family: var(--ae-font-body);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      font-family: var(--ae-font-title);
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin-bottom: 32px;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--ae-surface);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: var(--ae-font-body);
+      backdrop-filter: blur(10px);
+      transition: all 0.2s ease;
+    }
+
+    .tag:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-2px);
+    }
+
+    /* ═══════════════════════════════════════════════════════════ */
+    /* SECCIONES */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    section {
+      padding: 80px 0;
+    }
+
+    section h2 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      font-weight: 700;
+      font-family: var(--ae-font-title);
+      margin-bottom: 12px;
+      color: var(--ae-dark);
+    }
+
+    .section-intro {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .section-intro h2 {
+      margin-bottom: 0;
+    }
+
+    .section-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--ae-accent);
+      border-radius: 999px;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    .section-sub {
+      color: var(--ae-muted);
+      font-size: 1.05rem;
+      margin-bottom: 0;
+    }
+
+    /* ═══════════════════════════════════════════════════════════ */
+    /* GRID DE CARDS */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 0;
+    }
+
+    .card {
+      background: var(--ae-surface);
+      border: 1px solid var(--ae-border);
+      border-radius: var(--ae-radius-l);
+      padding: 32px 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--ae-primary);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--ae-shadow-hover);
+      border-color: var(--ae-primary);
+    }
+
+    .card:hover::before {
+      transform: translateX(0);
+    }
+
+    .card .icon {
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-family: var(--ae-font-title);
+      color: var(--ae-dark);
+      margin: 0;
+    }
+
+    .card p {
+      color: var(--ae-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ae-primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 8px;
+      transition: gap 0.2s ease;
+    }
+
+    .card:hover .card-cta {
+      gap: 12px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════ */
+    /* FOOTER */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    footer {
+      background: var(--ae-dark);
+      color: var(--ae-surface);
+      padding: 48px 0;
+      margin-top: 60px;
+      border-top: 1px solid var(--ae-border);
+      text-align: center;
+    }
+
+    footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      width: 40px;
+      height: auto;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    footer a {
+      color: var(--ae-accent);
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    /* ═══════════════════════════════════════════════════════════ */
+    /* RESPONSIVE */
+    /* ═══════════════════════════════════════════════════════════ */
+
+    @media (max-width: 768px) {
+      header.hero {
+        padding: 60px 0 80px;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-logo img {
+        width: 80px;
+      }
+
+      .hero-tags {
+        justify-content: center;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .card {
+        padding: 24px 20px;
+      }
+
+      footer .wrap {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+
+    /* MODO OSCURO - AJUSTES */
+    @media (prefers-color-scheme: dark) {
+      section h2 {
+        color: var(--ae-surface);
+      }
+
+      .card h3 {
+        color: var(--ae-surface);
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- HEADER / HERO -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
   <header class="hero">
     <div class="wrap">
-      <div class="kicker">by Adrián Espés · Microsoft MVP</div>
-      <h1>🧰 IA Toolbox</h1>
-      <p>Una caja de herramientas abierta sobre <b>IA aplicada</b>, <b>Microsoft Copilot</b>, <b>agentes</b> y productividad. Copia, adapta y usa. Con o sin perfil técnico.</p>
-      <span class="tag">🤖 Agentes</span>
-      <span class="tag">💬 Prompts</span>
-      <span class="tag">📚 Guías</span>
-      <span class="tag">📦 Recursos</span>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <svg viewBox="0 0 200 200" width="100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="200" rx="40" fill="#075E63"/>
+            <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+            <!-- Letra A -->
+            <path d="M 50 80 L 75 50 L 100 80 M 60 100 L 90 100" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Letra E -->
+            <path d="M 110 50 L 110 130 M 110 50 L 150 50 M 110 90 L 145 90 M 110 130 L 150 130" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Acento coral -->
+            <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
+          </svg>
+        </div>
+        <div class="hero-text">
+          <div class="kicker">by Adrián Espés · Microsoft MVP</div>
+          <h1>🧰 IA Toolbox</h1>
+          <p>Una caja de herramientas abierta sobre <strong>IA aplicada</strong>, <strong>Microsoft Copilot</strong>, <strong>agentes</strong> y productividad. Copia, adapta y usa. Con o sin perfil técnico.</p>
+          <div class="hero-tags">
+            <span class="tag">🤖 Agentes</span>
+            <span class="tag">💬 Prompts</span>
+            <span class="tag">📚 Guías</span>
+            <span class="tag">📦 Recursos</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECCIÓN PRINCIPAL -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
   <section>
     <div class="wrap">
-      <h2>🧭 Explora la caja de herramientas</h2>
-      <p class="sub">Elige una sección. Copia, adapta y usa en tu día a día.</p>
+      <div class="section-intro">
+        <h2>🧭 Explora la caja de herramientas</h2>
+        <div class="section-divider"></div>
+      </div>
+      <p class="section-sub">Elige una sección. Copia, adapta y usa en tu día a día.</p>
+
       <div class="grid">
-        <a class="card" href="agentes/">
-          <div class="ico">🤖</div>
+        <!-- AGENTES -->
+        <a href="agentes/" class="card">
+          <div class="icon">🤖</div>
           <h3>Agentes</h3>
           <p>Instrucciones de agentes de Copilot Studio, listas para copiar y pegar.</p>
+          <span class="card-cta">Explorar →</span>
         </a>
-        <a class="card" href="recursos/">
-          <div class="ico">📦</div>
+
+        <!-- RECURSOS -->
+        <a href="recursos/" class="card">
+          <div class="icon">📦</div>
           <h3>Recursos</h3>
           <p>Herramientas interactivas, infografías y material descargable.</p>
+          <span class="card-cta">Explorar →</span>
         </a>
-        <a class="card" href="prompts/">
-          <div class="ico">💬</div>
-          <h3>Pronteca · Prompts</h3>
+
+        <!-- PROMPTS -->
+        <a href="prompts/" class="card">
+          <div class="icon">💬</div>
+          <h3>Pronteca</h3>
           <p>Librería de prompts reutilizables, organizada por tarea.</p>
+          <span class="card-cta">Explorar →</span>
         </a>
-        <a class="card" href="tutoriales/">
-          <div class="ico">📚</div>
+
+        <!-- TUTORIALES -->
+        <a href="tutoriales/" class="card">
+          <div class="icon">📚</div>
           <h3>Tutoriales</h3>
           <p>Guías paso a paso de Copilot, agentes y GitHub Pages.</p>
+          <span class="card-cta">Explorar →</span>
         </a>
-        <a class="card" href="sessions/">
-          <div class="ico">🎓</div>
+
+        <!-- SEMINARIOS -->
+        <a href="sessions/" class="card">
+          <div class="icon">🎓</div>
           <h3>Seminarios</h3>
           <p>Materiales de sesiones educativas, webinarios y eventos.</p>
+          <span class="card-cta">Explorar →</span>
         </a>
-        <a class="card" href="https://adrianespes.com">
-          <div class="ico">🌐</div>
+
+        <!-- WEB & YOUTUBE -->
+        <a href="https://adrianespes.com" class="card">
+          <div class="icon">🌐</div>
           <h3>Web & YouTube</h3>
           <p>Artículos, análisis y vídeos sobre IA aplicada y Copilot.</p>
+          <span class="card-cta">Visitar →</span>
         </a>
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
   <footer>
     <div class="wrap">
-      Hecho con ❤️ por <b>Adrián Espés</b> · Microsoft MVP · M365 Copilot ·
-      <a href="https://adrianespes.com">adrianespes.com</a> ·
-      Contenido bajo CC BY 4.0
+      <svg class="footer-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="200" rx="40" fill="#075E63"/>
+        <rect width="200" height="200" rx="40" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+        <path d="M 50 80 L 75 50 L 100 80 M 60 100 L 90 100" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 110 50 L 110 130 M 110 50 L 150 50 M 110 90 L 145 90 M 110 130 L 150 130" stroke="#FFFFFF" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="120" y="100" width="20" height="15" fill="#F2544B" rx="2"/>
+      </svg>
+      <div class="footer-text">
+        Hecho con ❤️ por <strong>Adrián Espés</strong> · Microsoft MVP · M365 Copilot ·
+        <a href="https://adrianespes.com">adrianespes.com</a>
+      </div>
+      <div class="footer-text">Contenido bajo <strong>CC BY 4.0</strong></div>
     </div>
   </footer>
+
 </body>
 </html>
