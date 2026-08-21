@@ -7,7 +7,7 @@
 
 <p align="center">
   <b>IA aplicada · Microsoft Copilot · Agentes · Productividad digital</b><br>
-  Una caja de herramientas abierta y reutilizable: agentes, HTMLs visuales, prompts y guías.
+  Una caja de herramientas abierta y reutilizable: agentes, prompts, tutoriales y recursos.
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@ Una **caja de herramientas** con recursos sencillos y reutilizables sobre IA apl
 Microsoft Copilot, pensados para que **cualquier persona** —tenga o no perfil técnico— pueda
 copiar, adaptar y usar en su día a día.
 
-> 🌐 **Míralo en web:** este repo se publica con **GitHub Pages**, así los HTMLs se ven
+> 🌐 **Míralo en web:** este repo se publica con **GitHub Pages**, así los recursos se ven
 > renderizados (no como código): **https://aespese29.github.io/ia-toolbox/**
 
 ---
@@ -43,10 +43,10 @@ copiar, adaptar y usar en su día a día.
 | Carpeta | Qué contiene |
 |---|---|
 | 🤖 [`/agentes`](./agentes) | Instrucciones de agentes de Copilot Studio, listas para copiar y pegar |
-| 🎨 [`/htmls`](./htmls) | Informes visuales, infografías y plantillas HTML listas para abrir |
 | 💬 [`/prompts`](./prompts) | La **Pronteca**: librería de prompts reutilizables por tarea |
 | 📚 [`/tutoriales`](./tutoriales) | Guías paso a paso (Copilot, agentes, GitHub Pages…) |
-| 📦 [`/recursos`](./recursos) | Cheat sheets, checklists y material descargable |
+| 📦 [`/recursos`](./recursos) | Herramientas interactivas, infografías y material descargable |
+| 🎓 [`/sessions`](./sessions) | Materiales de webinarios y sesiones educativas |
 | 🖼️ [`/assets`](./assets) | Imágenes, logos y estilos compartidos |
 
 ---
@@ -54,7 +54,7 @@ copiar, adaptar y usar en su día a día.
 ## 🚀 Cómo usarlo
 
 1. **Navega** por la carpeta que te interese (o entra por la web con GitHub Pages).
-2. **Copia** lo que necesites: abre un HTML, o copia las instrucciones de un agente / un prompt.
+2. **Copia** lo que necesites: abre una herramienta interactiva, o copia las instrucciones de un agente / un prompt.
 3. **Adáptalo** a tu caso. Todo está pensado como punto de partida, no como algo cerrado.
 
 > 💡 ¿Sin perfil técnico? Empieza por los [tutoriales](./tutoriales) y la [Pronteca](./prompts).
@@ -64,7 +64,7 @@ copiar, adaptar y usar en su día a día.
 ## 🤝 Sugerencias
 
 Este repositorio está **curado personalmente**, así que no se aceptan subidas directas.
-¿Tienes un prompt, un agente o un HTML que quieras compartir? Envíamelo por correo a
+¿Tienes un prompt, un agente, una infografía o un recurso que quieras compartir? Envíamelo por correo a
 📧 **aespes@adrianespes.com** y, si encaja, lo publico dándote el crédito.
 Más detalles en [**CONTRIBUTING.md**](./CONTRIBUTING.md).
 
