@@ -1,4 +1,4 @@
-# 💬 Pronteca · Librería de prompts reutilizables
+# 💬 Prompteca · Librería de prompts reutilizables
 
 Colección de prompts que funcionan bien, organizados por tarea. **Copia, adapta y usa.**
 
