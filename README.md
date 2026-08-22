@@ -43,7 +43,7 @@ copiar, adaptar y usar en su día a día.
 | Carpeta | Qué contiene |
 |---|---|
 | 🤖 [`/agentes`](./agentes) | Instrucciones de agentes de Copilot Studio, listas para copiar y pegar |
-| 💬 [`/prompts`](./prompts) | La **Pronteca**: librería de prompts reutilizables por tarea |
+| 💬 [`/prompts`](./prompts) | La **Prompteca**: librería de prompts reutilizables por tarea |
 | 📚 [`/tutoriales`](./tutoriales) | Guías paso a paso (Copilot, agentes, GitHub Pages…) |
 | 📦 [`/recursos`](./recursos) | Herramientas interactivas, infografías y material descargable |
 | 🎓 [`/sessions`](./sessions) | Materiales de webinarios y sesiones educativas |
@@ -57,15 +57,15 @@ copiar, adaptar y usar en su día a día.
 2. **Copia** lo que necesites: abre una herramienta interactiva, o copia las instrucciones de un agente / un prompt.
 3. **Adáptalo** a tu caso. Todo está pensado como punto de partida, no como algo cerrado.
 
-> 💡 ¿Sin perfil técnico? Empieza por los [tutoriales](./tutoriales) y la [Pronteca](./prompts).
+> 💡 ¿Sin perfil técnico? Empieza por los [tutoriales](./tutoriales) y la [Prompteca](./prompts).
 
 ---
 
 ## 🤝 Sugerencias
 
-Este repositorio está **curado personalmente**, así que no se aceptan subidas directas.
-¿Tienes un prompt, un agente, una infografía o un recurso que quieras compartir? Envíamelo por correo a
-📧 **aespes@adrianespes.com** y, si encaja, lo publico dándote el crédito.
+IA Toolbox es una colección de recursos **seleccionados y mantenidos personalmente**, por lo que no se aceptan contribuciones directas al repositorio.
+Si quieres proponer un recurso, puedes enviármelo a 📧 **aespes@adrianespes.com**. Si encaja con el objetivo de este proyecto, lo añadiré indicando la autoría correspondiente. 
+
 Más detalles en [**CONTRIBUTING.md**](./CONTRIBUTING.md).
 
 ---
