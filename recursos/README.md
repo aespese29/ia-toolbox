@@ -8,6 +8,7 @@ Colección de herramientas interactivas, infografías, checklists y material des
 |-----------|-------------|---------|
 | 🖼️ **Infografías M365** | Infografías sobre novedades de Microsoft 365 Copilot basadas en el Message Center | [`/infografias-m365`](./infografias-m365/) |
 | 📊 **Evaluaciones** | Herramientas interactivas de diagnóstico y autoevaluación | [`/evaluaciones`](./evaluaciones/) |
+| 🧩 **Plantilla SKILL.md** | Guía y plantilla para definir una skill de IA en 6 bloques | [`/plantilla-skill-md`](./plantilla-skill-md/) |
 
 ---
 
@@ -15,7 +16,6 @@ Colección de herramientas interactivas, infografías, checklists y material des
 
 - 📋 Checklists y guías de verificación
 - 🧾 Cheat sheets y referencias rápidas
-- 🎨 Plantillas reutilizables
 - 📄 Documentos y guías descargables
 
 ---

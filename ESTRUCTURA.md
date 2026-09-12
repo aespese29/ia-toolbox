@@ -28,12 +28,18 @@ ia-toolbox/
 │   │       ├── README.md
 │   │       ├── index.html
 │   │       └── banner-*.png
-│   └── infografias-m365/   → Infografías de novedades M365
+│   ├── infografias-m365/   → Infografías de novedades M365
+│   │   ├── README.md
+│   │   └── MC1443523-planner-copilot-chat/
+│   │       ├── README.md
+│   │       ├── *.png
+│   │       └── *.pdf
+│   └── plantilla-skill-md/ → Plantilla y guía para definir skills de IA
 │       ├── README.md
-│       └── MC1443523-planner-copilot-chat/
-│           ├── README.md
-│           ├── *.png
-│           └── *.pdf
+│       ├── index.html
+│       ├── SKILL.md
+│       ├── AE_Guia_SkillMd_6Bloques_A4.pdf
+│       └── AE_Infografia_SkillMd.png
 ├── sessions/               → 🎓 Webinarios y sesiones educativas
 │   └── README.md
 └── assets/                 → 🖼️ Logos, imágenes y CSS compartido

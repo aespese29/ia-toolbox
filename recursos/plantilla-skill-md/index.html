@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Plantilla SKILL.md y guía para definir el objetivo, el contexto, las instrucciones, el tono y las comprobaciones de una skill de IA de forma estructurada.">
+<title>Plantilla SKILL.md · IA Toolbox · Adrián Espés</title>
+<style>
+:root{--primary:#075E63;--primary2:#0A747A;--accent:#F2544B;--dark:#123238;--text:#263238;--muted:#66777A;--line:#E3EAEB;--bg:#FAFBF9;--surface:#fff;--soft:#EDF5F4;--radius:14px;--shadow:0 10px 30px rgba(18,50,56,.09);--title:Manrope,Arial,sans-serif;--body:Inter,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55}
+a{color:var(--primary)}
+.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:10px 14px;z-index:99}.skip:focus{left:8px}
+.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+
+.header{background:linear-gradient(135deg,var(--dark),#0B282D 58%,var(--primary));color:#fff;padding:28px 20px 54px;position:relative;overflow:hidden}
+.header:after{content:"";position:absolute;width:260px;height:260px;border:2px solid rgba(242,84,75,.25);border-radius:50%;right:-100px;bottom:-150px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:12px;padding:5px}
+.brand strong{font-family:var(--title);font-size:16px}
+.brand small{display:block;color:#C9DADB}
+.chip{display:flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 12px;font-size:13px;color:#E7F0F0}
+.chip svg{width:18px;flex:none}
+.hero{max-width:850px;padding-top:44px;position:relative;z-index:1}
+.eyebrow{font-family:var(--title);font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#7FD4C9;font-size:13px}
+h1{font:800 clamp(32px,5.4vw,58px)/1.08 var(--title);letter-spacing:-1.4px;margin:12px 0 18px}
+.hero p{font-size:18px;color:#D8E5E5;max-width:760px;margin:0}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{border:0;border-radius:10px;padding:13px 18px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;min-height:48px}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-primary{background:#fff;color:var(--dark)}
+.btn-outline{background:transparent;border:1px solid #BFD0D1;color:#fff}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.main{margin-top:-28px;position:relative;z-index:2;padding-bottom:48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+h2{font:800 28px/1.2 var(--title);color:var(--dark);margin:0 0 10px}
+h3{font:700 18px/1.3 var(--title);color:var(--dark);margin:0}
+.sectionlabel{font-family:var(--title);font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:var(--primary);font-size:12px;margin:40px 0 14px}
+
+.intro{display:grid;grid-template-columns:1.25fr .75fr;gap:20px;padding:24px}
+.intro p{margin:0 0 12px}
+.notice{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:16px;margin-top:4px}
+.notice strong{color:var(--dark)}
+.side{background:var(--dark);color:#fff;border-radius:12px;padding:22px}
+.side h3{color:#fff;margin-bottom:12px}
+.side ul{margin:0;padding-left:18px;color:#D6E3E3;font-size:14px}
+.side li{margin-bottom:7px}
+
+.blocks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.blk{padding:18px 20px;position:relative;overflow:hidden}
+.blk:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--primary)}
+.blk.accent:before{background:var(--accent)}
+.blk .num{font:800 30px var(--title);color:#EDF3F3;position:absolute;top:14px;right:18px;line-height:1}
+.blk h3{display:flex;align-items:center;gap:10px}
+.blk h3 i{width:30px;height:30px;border-radius:8px;background:var(--soft);display:flex;align-items:center;justify-content:center;flex:none}
+.blk.accent h3 i{background:#FDEAE9}
+.blk p{color:var(--muted);font-size:14.5px;margin:10px 0 0;padding-left:40px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{padding:22px 24px}
+pre{background:var(--dark);border-radius:10px;padding:16px 18px;color:#D7E4E5;font-family:'Cascadia Code',Consolas,monospace;font-size:13.5px;line-height:1.7;overflow-x:auto;margin:14px 0 0}
+pre b{color:var(--accent);font-weight:700}
+pre i{color:#7FB3B6;font-style:normal}
+ol.steps{margin:14px 0 0;padding-left:20px}
+ol.steps li{margin-bottom:10px}
+ul.check{list-style:none;margin:14px 0 0;padding:0}
+ul.check li{position:relative;padding-left:28px;margin-bottom:11px;font-size:15px}
+ul.check li:before{content:"";position:absolute;left:0;top:2px;width:17px;height:17px;border-radius:5px;background:var(--soft) url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 10.5l3.5 3.5L15 6.5' stroke='%23075E63' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+code{font-family:'Cascadia Code',Consolas,monospace;font-size:13.5px;background:var(--soft);color:var(--primary);padding:1px 6px;border-radius:4px}
+
+.downloads{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dl{padding:20px;display:flex;flex-direction:column;gap:12px}
+.dl .ico{width:42px;height:42px;border-radius:10px;background:var(--soft);display:flex;align-items:center;justify-content:center}
+.dl p{color:var(--muted);font-size:14px;margin:0;flex:1}
+.dl .btn{background:var(--primary);color:#fff;width:100%}
+.dl .btn:hover{background:#054A4E}
+
+figure{margin:0}
+figure img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:10px}
+
+.footer{background:var(--dark);color:#fff;padding:28px 20px}
+.footer .in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer a{color:#9FD3D5}
+.footer .sign{display:flex;align-items:center;gap:13px}
+.footer .sign img{width:50px;height:50px;object-fit:contain;background:#fff;border-radius:10px;padding:4px}
+.footer .sign strong{font-family:var(--title);font-size:15px;display:block}
+.footer .sign small{color:#B9CDCE}
+.footer .note{font-size:13.5px;color:#B9CDCE;max-width:560px}
+
+@media (max-width:900px){
+  .intro{grid-template-columns:1fr}
+  .blocks{grid-template-columns:1fr 1fr}
+  .downloads{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .blocks{grid-template-columns:1fr}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido principal</a>
+
+<header class="header">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <img src="AE_Isotipo.png" alt="">
+        <div><strong>Adrián Espés</strong><small>IA Toolbox · Recursos</small></div>
+      </div>
+      <span class="chip">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 3h6l4 4v10H5z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/><path d="M11 3v4h4" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        Descarga libre · sin registro
+      </span>
+    </div>
+
+    <div class="hero">
+      <div class="eyebrow">Recurso descargable</div>
+      <h1>Plantilla SKILL.md</h1>
+      <p>Una guía sencilla para definir el objetivo, el contexto, las instrucciones, el tono y las comprobaciones de una skill de forma estructurada.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="SKILL.md" download>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0l-3.6-3.6M10 13l3.6-3.6M4 16h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Descargar la plantilla
+        </a>
+        <a class="btn btn-outline" href="AE_Guia_SkillMd_6Bloques_A4.pdf" download>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 3h6l4 4v10H5z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M11 3v4h4" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+          Guía en PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main" id="contenido">
+  <div class="wrap">
+
+    <section class="card intro">
+      <div>
+        <h2>El prompt es el encargo. La skill es el manual de trabajo</h2>
+        <p>Cuando repetimos una tarea, volvemos a explicar el contexto, las reglas, los pasos, las fuentes permitidas y las comprobaciones. Una skill permite documentar esa forma de trabajar para que la IA pueda aplicarla cuando resulte necesario.</p>
+        <p>Esta plantilla recoge esa estructura en seis bloques, para que no tengas que empezar desde una hoja en blanco.</p>
+        <div class="notice">
+          <strong>¿Merece ser una skill?</strong>
+          Si la tarea se repite, sigue unos pasos reconocibles, usa reglas relativamente estables, produce un resultado identificable y hoy te obliga a escribir prompts muy largos, probablemente merezca la pena documentarla.
+        </div>
+      </div>
+      <aside class="side">
+        <h3>Qué incluye</h3>
+        <ul>
+          <li>Plantilla <code style="background:rgba(255,255,255,.1);color:#fff">SKILL.md</code> lista para rellenar</li>
+          <li>Guía en PDF de una página</li>
+          <li>Infografía con los 6 bloques</li>
+          <li>Test rápido: ¿merece ser una skill?</li>
+          <li>Checklist antes de darla por buena</li>
+        </ul>
+      </aside>
+    </section>
+
+    <div class="sectionlabel">Los 6 bloques</div>
+    <section class="blocks">
+      <article class="card blk">
+        <span class="num">01</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6.5" stroke="#075E63" stroke-width="2"/><circle cx="10" cy="10" r="2.2" fill="#075E63"/></svg></i>Objetivo</h3>
+        <p>Qué resultado produce la skill, en una o dos frases sin ambigüedad.</p>
+      </article>
+      <article class="card blk">
+        <span class="num">02</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6.5" stroke="#075E63" stroke-width="2"/><path d="M10 6.4v4l2.6 1.5" stroke="#075E63" stroke-width="2" stroke-linecap="round"/></svg></i>Cuándo utilizarla</h3>
+        <p>En qué situaciones aplica y en cuáles no debe aplicarse.</p>
+      </article>
+      <article class="card blk">
+        <span class="num">03</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 3h6l4 4v10H5z" stroke="#075E63" stroke-width="2" stroke-linejoin="round"/><path d="M11 3v4h4" stroke="#075E63" stroke-width="2" stroke-linejoin="round"/></svg></i>Contexto y fuentes</h3>
+        <p>Qué información puede usar, qué fuentes tiene permitidas y qué hacer si falta un dato.</p>
+      </article>
+      <article class="card blk">
+        <span class="num">04</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 16v-4h4V8h4V4h4" stroke="#075E63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Procedimiento</h3>
+        <p>Los pasos en orden, numerados y accionables. El orden también es instrucción.</p>
+      </article>
+      <article class="card blk">
+        <span class="num">05</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 5h12M4 10h12M4 15h7" stroke="#075E63" stroke-width="2" stroke-linecap="round"/></svg></i>Reglas, tono y formato</h3>
+        <p>Qué no hacer nunca, las excepciones, el registro y la estructura del entregable.</p>
+      </article>
+      <article class="card blk accent">
+        <span class="num">06</span>
+        <h3><i><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M5 10.5l3.5 3.5L15 6.5" stroke="#F2544B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Comprobación final</h3>
+        <p>La lista que debe superarse antes de entregar. Convierte la skill en calidad repetible.</p>
+      </article>
+    </section>
+
+    <div class="sectionlabel">Cómo utilizarla</div>
+    <section class="two">
+      <article class="card panel">
+        <h3>Cuatro pasos</h3>
+        <ol class="steps">
+          <li>Crea una carpeta con el nombre de tu skill.</li>
+          <li>Copia dentro la plantilla y renómbrala como <code>SKILL.md</code>.</li>
+          <li>Rellena los seis bloques y borra lo que no uses.</li>
+          <li>Ajústala cuando detectes un error recurrente.</li>
+        </ol>
+        <div class="notice"><strong>El nombre sí importa.</strong> El archivo principal debe llamarse exactamente <code>SKILL.md</code> y el campo <code>name</code> debe coincidir con el nombre de la carpeta: minúsculas, números y guiones, sin guiones al inicio o final ni consecutivos.</div>
+      </article>
+      <article class="card panel">
+        <h3>La carpeta de una skill</h3>
+        <pre><b>nombre-de-tu-skill/</b>
+├── <b>SKILL.md</b>        <i># obligatorio</i>
+├── scripts/        <i># código ejecutable</i>
+├── references/     <i># documentación consultable</i>
+└── assets/         <i># plantillas y recursos</i></pre>
+        <ul class="check">
+          <li><code>description</code> dice qué hace <strong>y cuándo usarla</strong></li>
+          <li>Menos de 500 líneas; lo extenso va a <code>references/</code></li>
+          <li>No hace falta código: basta el lenguaje natural</li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="sectionlabel">Descargas</div>
+    <section class="downloads">
+      <article class="card dl">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 3h6l4 4v10H5z" stroke="#075E63" stroke-width="1.9" stroke-linejoin="round"/><path d="M11 3v4h4" stroke="#075E63" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+        <h3>Plantilla SKILL.md</h3>
+        <p>Archivo Markdown con los seis bloques, comentarios de ayuda y el test previo.</p>
+        <a class="btn" href="SKILL.md" download>Descargar .md</a>
+      </article>
+      <article class="card dl">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="3" width="12" height="14" rx="2" stroke="#075E63" stroke-width="1.9"/><path d="M7 8h6M7 11h6M7 14h4" stroke="#075E63" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+        <h3>Guía en PDF</h3>
+        <p>Una página en A4 con los seis bloques, la estructura de carpetas y la comprobación final.</p>
+        <a class="btn" href="AE_Guia_SkillMd_6Bloques_A4.pdf" download>Descargar PDF</a>
+      </article>
+      <article class="card dl">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="12" rx="2" stroke="#075E63" stroke-width="1.9"/><path d="M3 13l4-4 3.2 3.2L13 9l4 4" stroke="#075E63" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+        <h3>Infografía</h3>
+        <p>Los seis bloques en una imagen, pensada para compartir o usar como recordatorio.</p>
+        <a class="btn" href="AE_Infografia_SkillMd.png" download>Descargar PNG</a>
+      </article>
+    </section>
+
+    <div class="sectionlabel">Vista previa</div>
+    <section class="card panel">
+      <figure>
+        <img src="AE_Infografia_SkillMd.png" alt="Infografía: cómo definir una skill en seis bloques, con la estructura de carpetas y las reglas del archivo SKILL.md.">
+        <figcaption>Cómo definir una skill en 6 bloques · IA Toolbox de Adrián Espés</figcaption>
+      </figure>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap in">
+    <div class="note">
+      Recurso basado en el artículo <a href="https://adrianespes.com/que-es-skill-md/">¿Qué es SKILL.md y por qué usar skills de IA?</a><br>
+      <code style="background:rgba(255,255,255,.1);color:#fff">SKILL.md</code> es un formato en evolución: su compatibilidad y funcionamiento pueden variar según la herramienta o implementación.
+    </div>
+    <div class="sign">
+      <img src="AE_Isotipo.png" alt="">
+      <div><strong>Adrián Espés</strong><small>Microsoft MVP Microsoft 365 Copilot</small></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
