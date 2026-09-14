@@ -1,5 +1,7 @@
 # ¿Qué puede hacer Microsoft Copilot por ti?
 
+[Español](README.md) · [English](README.en.md)
+
 ![¿Qué puede hacer Microsoft Copilot por ti?](adrian-espes.jpg)
 
 Sesión introductoria sobre Microsoft Copilot y Microsoft 365 Copilot, orientada a descubrir casos de uso reales para mejorar la productividad personal y profesional.

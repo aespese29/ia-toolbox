@@ -1,5 +1,7 @@
 # 💬 Prompteca · Librería de prompts reutilizables
 
+[Español](README.md) · [English](README.en.md)
+
 Colección de prompts que funcionan bien, organizados por tarea. **Copia, adapta y usa.**
 
 > 💡 Un buen prompt suele tener **4 piezas**: rol · tarea · contexto · formato.

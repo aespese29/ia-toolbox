@@ -1,5 +1,7 @@
 <div align="center">
 
+[Español](README.md) · [English](README.en.md)
+
 # 🧩 FormatIA
 
 ### ✍️ Escritura eficaz en markdown para agentes declarativos de Microsoft 365 Copilot

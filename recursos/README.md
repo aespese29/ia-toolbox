@@ -1,5 +1,7 @@
 # 📦 Recursos
 
+[Español](README.md) · [English](README.en.md)
+
 Colección de herramientas interactivas, infografías, checklists y material descargable para usar inmediatamente.
 
 ## 🗂️ Categorías

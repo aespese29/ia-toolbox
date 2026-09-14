@@ -1,5 +1,7 @@
 # 📊 Evaluaciones
 
+[Español](README.md) · [English](README.en.md)
+
 Herramientas interactivas para autoevaluación, diagnóstico y medición de preparación en temas de IA y Microsoft 365 Copilot.
 
 Las evaluaciones se procesan **localmente en tu navegador** (sin enviar datos a servidores). Obtén resultados inmediatos, identificar bloqueos y recomendaciones accionables.

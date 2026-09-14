@@ -1,5 +1,7 @@
 # 🧩 Plantilla SKILL.md — Define tu skill en 6 bloques
 
+[Español](README.md) · [English](README.en.md)
+
 Una guía sencilla para definir **objetivos, instrucciones, tono y contexto** de una skill de IA
 de forma estructurada, para que cualquier asistente (Copilot, Claude, ChatGPT…) trabaje siempre
 con el mismo criterio.

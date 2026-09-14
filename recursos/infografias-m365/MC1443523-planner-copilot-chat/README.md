@@ -1,5 +1,7 @@
 # Planner llega al chat de Copilot (MC1443523)
 
+[Español](README.md) · [English](README.en.md)
+
 Microsoft 365 Copilot Chat permitirá **crear, consultar y actualizar tareas y planes de Planner
 usando lenguaje natural**, sin cambiar de aplicación. Mantiene los permisos existentes y **no
 requiere ninguna acción**.

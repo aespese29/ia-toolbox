@@ -1,5 +1,7 @@
 # 🤖 Agentes
 
+[Español](README.md) · [English](README.en.md)
+
 Instrucciones de agentes de Copilot Studio, listas para **copiar y pegar**.
 Cada agente vive en su propia carpeta con su ficha, instrucciones y ejemplos de uso.
 
