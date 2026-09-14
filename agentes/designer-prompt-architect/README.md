@@ -1,5 +1,7 @@
 # 🎨 Designer Prompt Architect
 
+[Español](README.md) · [English](README.en.md)
+
 ## 🎯 Para qué sirve
 Ayuda a transformar una idea inicial en un prompt visual claro, detallado,
 creativo y optimizado para Microsoft Designer. Mediante preguntas breves y una
