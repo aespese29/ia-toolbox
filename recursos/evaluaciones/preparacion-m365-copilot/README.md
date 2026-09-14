@@ -1,5 +1,7 @@
 # Evaluación de preparación para Microsoft 365 Copilot
 
+[Español](README.md) · [English](README.en.md)
+
 ![Evaluación de preparación para Microsoft 365 Copilot](banner-evaluacion-preparacion-m365-copilot.png)
 
 Herramienta interactiva para evaluar el estado de preparación de una organización antes de desplegar **Microsoft 365 Copilot**.

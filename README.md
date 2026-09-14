@@ -5,6 +5,8 @@
 
 <h1 align="center">🧰 IA Toolbox · by Adrián Espés</h1>
 
+[Español](README.md) · [English](README.en.md)
+
 <p align="center">
   <b>IA aplicada · Microsoft Copilot · Agentes · Productividad digital</b><br>
   Una caja de herramientas abierta y reutilizable: agentes, prompts, tutoriales y recursos.

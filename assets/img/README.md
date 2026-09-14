@@ -1,5 +1,7 @@
 # 🖼️ Imágenes
 
+[Español](README.md) · [English](README.en.md)
+
 Coloca aquí tus imágenes. En concreto:
 
 - **banner.png** → cabecera que usa el README principal y el hub.

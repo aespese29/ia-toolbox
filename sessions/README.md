@@ -1,5 +1,7 @@
 # 🎓 Sessions · Seminarios y webinarios
 
+[Español](README.md) · [English](README.en.md)
+
 Materiales educativos de sesiones, webinarios y eventos sobre **IA aplicada**, **Microsoft Copilot** y **agentes**.
 
 Cada sesión incluye presentación, diapositivas y material complementario listo para descargar.

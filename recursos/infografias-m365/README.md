@@ -1,5 +1,7 @@
 # 🖼️ Infografías M365 · IA Toolbox
 
+[Español](README.md) · [English](README.en.md)
+
 Sección de **IA Toolbox** con infografías divulgativas sobre novedades de **Microsoft 365 Copilot** y el ecosistema Microsoft 365, basadas en anuncios del **Centro de mensajes (Message Center)**.
 
 Cada infografía se publica en tres formatos: **PNG** (para redes), **PDF** (imprimible/compartible) y **HTML interactivo** (para web).
