@@ -9,6 +9,7 @@ Cada agente vive en su propia carpeta con su ficha, instrucciones y ejemplos de 
 |---|---|---|
 | [🧩 FormatIA](./formatia) | Da forma a las instrucciones de tus agentes declarativos en markdown | Básico |
 | [🚀 M365 Soporte Usuario](./m365-soporte-usuario) | Ayuda a usar Microsoft 365 Copilot y genera prompts listos para usar | Básico |
+| [🎨 Designer Prompt Architect](./designer-prompt-architect) | Convierte ideas en prompts visuales detallados para Microsoft Designer | Básico |
 
 ## ➕ Publicar un agente nuevo
 
