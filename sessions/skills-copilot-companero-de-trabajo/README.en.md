@@ -2,6 +2,8 @@
 
 [Spanish](README.md) · [English](README.en.md)
 
+![How Skills turn Copilot into a real coworker](cover.jpg)
+
 Session delivered at **Cloud Champion** (October 21, 2026) about Microsoft 365 Copilot Skills: from prompts to productivity. How to package your working method into a reusable capability instead of rewriting the same 40-line prompt every week.
 
 ## Content
@@ -22,6 +24,7 @@ Session delivered at **Cloud Champion** (October 21, 2026) about Microsoft 365 C
 ## Available material
 
 - Session presentation (PDF, in Spanish)
+- Cover image
 - Demo kit (`kit-demos/`): demo guide, fictional brief, project status document, the `resumen-ejecutivo-comite` skill, and the `kit-anuncio-evento.zip` and `faq-evento.zip` packages
 
 > All demo data is fictional.

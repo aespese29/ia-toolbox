@@ -20,7 +20,7 @@ Each session includes a presentation, slides, and supplementary material ready t
 | 🕸️ [From zero to a network of agents: Copilot Studio Lite vs Full](./de-cero-a-red-de-agentes/) | AgentCamp Barcelona 2026 · Agent Builder vs Copilot Studio · Models · Agent networks | PDF · Image | [Open](./de-cero-a-red-de-agentes/) |
 | 🧩 [Building useful agents with Copilot Studio Lite](./agentes-utiles-copilot-studio-lite/) | AgentCamp Valencia 2026 · Assistant vs Agent · Instructions · No-code demo | PDF · Image | [Open](./agentes-utiles-copilot-studio-lite/) |
 | 📈 [Data that explains itself: Copilot in Excel](./datos-que-se-explican-solos-copilot-excel/) | Evento Internacional de Datos Valencia 2026 · Agent mode in Excel · Live demo · Practical use cases | PDF · Image | [Open](./datos-que-se-explican-solos-copilot-excel/) |
-| 🛠️ [How Skills turn Copilot into a real coworker](./skills-copilot-companero-de-trabajo/) | Cloud Champion 2026 · Copilot Skills · PowerPoint, Agent Builder, and Cowork · Governance | PDF · Demo kit | [Open](./skills-copilot-companero-de-trabajo/) |
+| 🛠️ [How Skills turn Copilot into a real coworker](./skills-copilot-companero-de-trabajo/) | Cloud Champion 2026 · Copilot Skills · PowerPoint, Agent Builder, and Cowork · Governance | PDF · Image · Demo kit | [Open](./skills-copilot-companero-de-trabajo/) |
 
 ---
 
