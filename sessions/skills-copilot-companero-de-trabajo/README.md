@@ -25,7 +25,7 @@ Sesión presentada en **Cloud Champion** (21 de octubre de 2026) sobre las Skill
 
 - Presentación de la sesión (PDF)
 - Imagen de portada
-- Kit de demos (`kit-demos/`): guía de demos, brief ficticio, documento de estado de proyecto, la skill `resumen-ejecutivo-comite` y los paquetes `kit-anuncio-evento.zip` y `faq-evento.zip`
+- Kit de demos (`kit-demos/`): guía de demos (PDF), brief ficticio, documento de estado de proyecto, la skill `resumen-ejecutivo-comite` y los paquetes `kit-anuncio-evento.zip` y `faq-evento.zip`
 
 > Todos los datos de las demos son ficticios.
 

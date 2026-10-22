@@ -25,7 +25,7 @@ Session delivered at **Cloud Champion** (October 21, 2026) about Microsoft 365 C
 
 - Session presentation (PDF, in Spanish)
 - Cover image
-- Demo kit (`kit-demos/`): demo guide, fictional brief, project status document, the `resumen-ejecutivo-comite` skill, and the `kit-anuncio-evento.zip` and `faq-evento.zip` packages
+- Demo kit (`kit-demos/`): demo guide (PDF), fictional brief, project status document, the `resumen-ejecutivo-comite` skill, and the `kit-anuncio-evento.zip` and `faq-evento.zip` packages
 
 > All demo data is fictional.
 
