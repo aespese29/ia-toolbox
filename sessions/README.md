@@ -21,6 +21,7 @@ Cada sesión incluye presentación, diapositivas y material complementario listo
 | 🧩 [Construyendo agentes útiles con Copilot Studio Lite](./agentes-utiles-copilot-studio-lite/) | AgentCamp Valencia 2026 · Asistente vs Agente · Instrucciones · Demo sin código | PDF · Imagen | [Abrir](./agentes-utiles-copilot-studio-lite/) |
 | 📈 [Datos que se explican solos: Copilot en Excel](./datos-que-se-explican-solos-copilot-excel/) | Evento Internacional de Datos Valencia 2026 · Modo agente en Excel · Demo en vivo · Casos prácticos | PDF · Imagen | [Abrir](./datos-que-se-explican-solos-copilot-excel/) |
 | 🛠️ [Cómo las Skills convierten Copilot en un verdadero compañero de trabajo](./skills-copilot-companero-de-trabajo/) | Cloud Champion 2026 · Skills de Copilot · PowerPoint, Agent Builder y Cowork · Gobernanza | PDF · Imagen · Kit de demos | [Abrir](./skills-copilot-companero-de-trabajo/) |
+| 🧭 [Copilot Frontier: tour guiado por lo último](./copilot-frontier-tour-guiado-bizzsummit/) | BizzSummit 2026 · Skills en Agent Builder · Browser Use de Cowork · App Builder | PDF · Imagen | [Abrir](./copilot-frontier-tour-guiado-bizzsummit/) |
 
 ---
 
