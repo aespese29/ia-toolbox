@@ -11,6 +11,7 @@ A collection of interactive tools, infographics, checklists, and downloadable ma
 | 🖼️ **M365 Infographics** | Infographics about Microsoft 365 Copilot updates based on the Message Center | [`/infografias-m365`](./infografias-m365/) |
 | 📊 **Assessments** | Interactive diagnostic and self-assessment tools | [`/evaluaciones`](./evaluaciones/) |
 | 🧩 **SKILL.md Template** | A guide and template for defining an AI skill in 6 blocks | [`/plantilla-skill-md`](./plantilla-skill-md/) |
+| 🧭 **Prompt, agent or skill?** | An interactive tool that helps you decide and generates the artifact | [`/prompt-agente-skill`](./prompt-agente-skill/) |
 
 ---
 
