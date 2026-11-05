@@ -27,6 +27,11 @@ Session delivered at **Cloud Champion** (October 21, 2026) about Microsoft 365 C
 - Cover image
 - Demo kit (`kit-demos/`): demo guide (PDF), fictional brief, project status document, the `resumen-ejecutivo-comite` skill, and the `kit-anuncio-evento.zip` and `faq-evento.zip` packages
 
+## Keep practising
+
+- 🧭 **[Prompt, agent or skill?](../../recursos/prompt-agente-skill/)** — an interactive tool that helps you decide and generates the prompt, the agent instructions or the `SKILL.md`.
+- 🧩 **[SKILL.md template in 6 blocks](../../recursos/plantilla-skill-md/)** — the guide for defining your skill properly.
+
 > All demo data is fictional.
 
 ## Speaker

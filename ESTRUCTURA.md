@@ -34,12 +34,15 @@ ia-toolbox/
 │   │       ├── README.md
 │   │       ├── *.png
 │   │       └── *.pdf
-│   └── plantilla-skill-md/ → Plantilla y guía para definir skills de IA
+│   ├── plantilla-skill-md/ → Plantilla y guía para definir skills de IA
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── SKILL.md
+│   │   ├── AE_Guia_SkillMd_6Bloques_A4.pdf
+│   │   └── AE_Infografia_SkillMd.png
+│   └── prompt-agente-skill/ → Herramienta para decidir entre prompt, agente o skill
 │       ├── README.md
-│       ├── index.html
-│       ├── SKILL.md
-│       ├── AE_Guia_SkillMd_6Bloques_A4.pdf
-│       └── AE_Infografia_SkillMd.png
+│       └── index.html
 ├── sessions/               → 🎓 Webinarios y sesiones educativas
 │   └── README.md
 └── assets/                 → 🖼️ Logos, imágenes y CSS compartido

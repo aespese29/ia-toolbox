@@ -27,6 +27,11 @@ Sesión presentada en **Cloud Champion** (21 de octubre de 2026) sobre las Skill
 - Imagen de portada
 - Kit de demos (`kit-demos/`): guía de demos (PDF), brief ficticio, documento de estado de proyecto, la skill `resumen-ejecutivo-comite` y los paquetes `kit-anuncio-evento.zip` y `faq-evento.zip`
 
+## Para seguir practicando
+
+- 🧭 **[¿Prompt, agente o skill?](../../recursos/prompt-agente-skill/)** — herramienta interactiva que te ayuda a decidir y te genera el prompt, las instrucciones del agente o el `SKILL.md`.
+- 🧩 **[Plantilla SKILL.md en 6 bloques](../../recursos/plantilla-skill-md/)** — la guía para definir tu skill con criterio.
+
 > Todos los datos de las demos son ficticios.
 
 ## Ponente
