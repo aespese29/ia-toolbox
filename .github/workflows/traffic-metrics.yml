@@ -1,0 +1,121 @@
+name: GitHub Traffic Metrics
+
+on:
+  # Permite ejecutar la recopilación manualmente
+  workflow_dispatch:
+
+  # Ejecuta la recopilación automáticamente cada día
+  schedule:
+    - cron: "15 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect-traffic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Recopilar métricas de GitHub
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          mkdir -p metrics
+
+          echo "Obteniendo visitas..."
+          gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/$REPOSITORY/traffic/views?per=day" \
+            > /tmp/views.json
+
+          echo "Obteniendo clones..."
+          gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/$REPOSITORY/traffic/clones?per=day" \
+            > /tmp/clones.json
+
+          python3 <<'PY'
+          import csv
+          import json
+          import os
+
+          # Leer datos de visitas
+          with open("/tmp/views.json") as f:
+              views_data = json.load(f)
+
+          # Leer datos de clones
+          with open("/tmp/clones.json") as f:
+              clones_data = json.load(f)
+
+          rows = {}
+
+          # Procesar visitas
+          for item in views_data.get("views", []):
+              date = item["timestamp"][:10]
+              rows.setdefault(date, {})
+              rows[date]["views"] = item["count"]
+              rows[date]["unique_visitors"] = item["uniques"]
+
+          # Procesar clones
+          for item in clones_data.get("clones", []):
+              date = item["timestamp"][:10]
+              rows.setdefault(date, {})
+              rows[date]["clones"] = item["count"]
+              rows[date]["unique_cloners"] = item["uniques"]
+
+          csv_file = "metrics/github-traffic.csv"
+          existing = {}
+
+          # Recuperar histórico existente
+          if os.path.exists(csv_file):
+              with open(csv_file, newline="") as f:
+                  reader = csv.DictReader(f)
+                  for row in reader:
+                      existing[row["date"]] = row
+
+          # Actualizar con los datos obtenidos
+          for date, values in rows.items():
+              existing[date] = {
+                  "date": date,
+                  "views": values.get("views", 0),
+                  "unique_visitors": values.get("unique_visitors", 0),
+                  "clones": values.get("clones", 0),
+                  "unique_cloners": values.get("unique_cloners", 0),
+              }
+
+          # Guardar histórico
+          with open(csv_file, "w", newline="") as f:
+              fieldnames = [
+                  "date",
+                  "views",
+                  "unique_visitors",
+                  "clones",
+                  "unique_cloners",
+              ]
+
+              writer = csv.DictWriter(f, fieldnames=fieldnames)
+              writer.writeheader()
+
+              for date in sorted(existing):
+                  writer.writerow(existing[date])
+
+          print(f"Métricas actualizadas: {len(rows)} días")
+          PY
+
+      - name: Guardar histórico en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add metrics/github-traffic.csv
+
+          if git diff --cached --quiet; then
+            echo "No hay cambios en las métricas."
+          else
+            git commit -m "Update GitHub traffic metrics"
+            git push
+          fi
