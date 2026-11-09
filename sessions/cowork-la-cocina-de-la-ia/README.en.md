@@ -4,7 +4,9 @@
 
 ![Cowork: the AI kitchen](cover.png)
 
-Session delivered at **Microsoft 365 Live 2026** (November 4, 2026) together with Nacho Dolz. Copilot Cowork explained as a professional kitchen: what it is, when to use it, and what it costs. Seven blocks to move from line cook to head chef, with live demos and an app built by Cowork itself.
+![Session announcement at Microsoft 365 Live 2026](anuncio-m365live.png)
+
+Session delivered at **Microsoft 365 Live 2026** (Wednesday, November 4, 2026, 7:00 PM CET) together with Nacho Dolz, under the title *"Copilot Cowork: el agente M365 que no sabías que necesitabas"*. Copilot Cowork explained as a professional kitchen: what it is, when to use it, and what it costs. Seven blocks to move from line cook to head chef, with live demos and an app built by Cowork itself.
 
 ## Content
 
@@ -20,6 +22,7 @@ Session delivered at **Microsoft 365 Live 2026** (November 4, 2026) together wit
 
 - Session presentation (PDF)
 - Cover image
+- Official session announcement at M365 Live 2026
 
 ## Speakers
 

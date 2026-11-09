@@ -4,7 +4,9 @@
 
 ![From prompts to productivity: how Skills turn Copilot into a real coworker](cover.jpg)
 
-Session delivered at **Microsoft 365 Live 2026** (November 4, 2026). The M365 Live edition of the Skills talk: the 40-line prompt you paste every Monday becomes a reusable capability. Five chained demos with fictional data to walk the path from prompt to Skill.
+![Session announcement at Microsoft 365 Live 2026](anuncio-m365live.png)
+
+Session delivered at **Microsoft 365 Live 2026** (Wednesday, November 4, 2026, 4:00 PM CET), under the title *"Más allá de los prompts: cómo las Skills convierten Copilot en un compañero de trabajo"*. The M365 Live edition of the Skills talk: the 40-line prompt you paste every Monday becomes a reusable capability. Five chained demos with fictional data to walk the path from prompt to Skill.
 
 > There is also a [Cloud Champion 2026 edition](../skills-copilot-companero-de-trabajo/) of this same session.
 
@@ -25,6 +27,7 @@ Session delivered at **Microsoft 365 Live 2026** (November 4, 2026). The M365 Li
 
 - Session presentation (PDF)
 - Cover image
+- Official session announcement at M365 Live 2026
 - Demo kit (`kit-demos/`): fictional briefs, sample Skills, and a demo guide
 
 ## Speaker
