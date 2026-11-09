@@ -4,7 +4,9 @@
 
 ![De los prompts a la productividad: cómo las Skills convierten Copilot en un verdadero compañero de trabajo](cover.jpg)
 
-Sesión presentada en **Microsoft 365 Live 2026** (4 de noviembre de 2026). Edición M365 Live de la charla sobre Skills: el prompt de 40 líneas que pegas cada lunes se convierte en una capacidad reutilizable. Cinco demos encadenadas con datos ficticios para recorrer el camino del prompt a la Skill.
+![Anuncio de la sesión en Microsoft 365 Live 2026](anuncio-m365live.png)
+
+Sesión presentada en **Microsoft 365 Live 2026** (miércoles 4 de noviembre de 2026, 16:00 CET), bajo el título *«Más allá de los prompts: cómo las Skills convierten Copilot en un compañero de trabajo»*. Edición M365 Live de la charla sobre Skills: el prompt de 40 líneas que pegas cada lunes se convierte en una capacidad reutilizable. Cinco demos encadenadas con datos ficticios para recorrer el camino del prompt a la Skill.
 
 > Existe también la [edición Cloud Champion 2026](../skills-copilot-companero-de-trabajo/) de esta misma sesión.
 
@@ -25,6 +27,7 @@ Sesión presentada en **Microsoft 365 Live 2026** (4 de noviembre de 2026). Edic
 
 - Presentación de la sesión (PDF)
 - Imagen de portada
+- Anuncio oficial de la sesión en M365 Live 2026
 - Kit de demos (`kit-demos/`): briefs ficticios, Skills de ejemplo y guía de demos
 
 ## Ponente
