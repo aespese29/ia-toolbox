@@ -22,6 +22,8 @@ Cada sesión incluye presentación, diapositivas y material complementario listo
 | 📈 [Datos que se explican solos: Copilot en Excel](./datos-que-se-explican-solos-copilot-excel/) | Evento Internacional de Datos Valencia 2026 · Modo agente en Excel · Demo en vivo · Casos prácticos | PDF · Imagen | [Abrir](./datos-que-se-explican-solos-copilot-excel/) |
 | 🛠️ [Cómo las Skills convierten Copilot en un verdadero compañero de trabajo](./skills-copilot-companero-de-trabajo/) | Cloud Champion 2026 · Skills de Copilot · PowerPoint, Agent Builder y Cowork · Gobernanza | PDF · Imagen · Kit de demos | [Abrir](./skills-copilot-companero-de-trabajo/) |
 | 🧭 [Copilot Frontier: tour guiado por lo último](./copilot-frontier-tour-guiado-bizzsummit/) | BizzSummit 2026 · Skills en Agent Builder · Browser Use de Cowork · App Builder | PDF · Imagen | [Abrir](./copilot-frontier-tour-guiado-bizzsummit/) |
+| 👨‍🍳 [Cowork: la cocina de la IA](./cowork-la-cocina-de-la-ia/) | Microsoft 365 Live 2026 · Cowork y WorkIQ · Skills · Adopción y Copilot Credits · Demos en directo | PDF · Imagen | [Abrir](./cowork-la-cocina-de-la-ia/) |
+| 🧰 [De los prompts a la productividad: las Skills de Copilot](./skills-copilot-companero-m365live/) | Microsoft 365 Live 2026 · Prompt vs. agente vs. Skill · PowerPoint, Agent Builder y Cowork · 5 demos | PDF · Imagen · Kit de demos | [Abrir](./skills-copilot-companero-m365live/) |
 
 ---
 
