@@ -11,6 +11,7 @@ Las evaluaciones se procesan **localmente en tu navegador** (sin enviar datos a 
 | Evaluación | Para qué sirve | Acceder |
 |---|---|---|
 | **Preparación para M365 Copilot** | Evalúa si tu organización está lista para desplegar Microsoft 365 Copilot. Identifica brechas y prioridades. | [Abrir evaluación](./preparacion-m365-copilot/) |
+| **¿Necesitas realmente un agente?** | Nueve preguntas para reflexionar antes de crear un agente y orientar la decisión. | [Abrir evaluación](./necesitas-un-agente/) |
 
 ---
 

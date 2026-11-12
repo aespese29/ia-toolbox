@@ -11,6 +11,7 @@ Assessments are processed **locally in your browser** (without sending data to s
 | Assessment | Purpose | Access |
 |---|---|---|
 | **M365 Copilot Readiness** | Assesses whether your organization is ready to deploy Microsoft 365 Copilot. Identifies gaps and priorities. | [Open assessment](./preparacion-m365-copilot/) |
+| **Do you really need an agent?** | Nine questions to help you think before building an agent and guide the decision. | [Open assessment](./necesitas-un-agente/) |
 
 ---
 
