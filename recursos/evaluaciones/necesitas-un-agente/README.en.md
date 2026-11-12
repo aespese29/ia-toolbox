@@ -4,6 +4,8 @@
 
 **Traduciendo la IA · Adrián Espés · Microsoft MVP · M365 Copilot**
 
+![Do you really need an agent?](banner-necesitas-un-agente.png)
+
 An interactive, orientation-only tool to help you think before building an agent. It accompanies the carousel *The first mistake when creating an agent*.
 
 > First the need. Then the agent. And only then, the tool.
